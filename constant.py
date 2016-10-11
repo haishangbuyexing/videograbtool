@@ -8,5 +8,5 @@ default character set utf8 COLLATE utf8_general_ci;
 """
 
 SQL_VIDEO_USER = """
-GRANT ALL PRIVILEGES on smb.* to '%s'@'localhost' IDENTIFIED BY '%s';
+GRANT ALL PRIVILEGES on video.* to '%s'@'localhost' IDENTIFIED BY '%s';
 """ % (DB_USER, DB_PASSWD)

@@ -3,11 +3,13 @@ import urllib2
 import re
 import sys
 import sqlite3
+import xlrd
+import os,sys,datetime
 reload(sys)
 sys.setdefaultencoding("utf-8")
 URL="http://www.tongzhuo100.com/primary/v7/1/1/index.html"
 
-def grabCourse(version, url):
+def grabCourse(version, startId, url):
     req = urllib2.Request(url)
     response = urllib2.urlopen(req)
     prog = re.compile(r'<p class="b1">(.*?)</p>')
@@ -25,7 +27,7 @@ def grabCourse(version, url):
                    "name nvarchar, " \
                    "url nvarchar);";
     conn.execute(createVideoTable)
-    count = 0
+    count = startId
     for line in result:
         line = unicode(line, "utf-8")
         grade = line[0:3].encode('utf-8')
@@ -40,5 +42,16 @@ def grabCourse(version, url):
 
     conn.commit()
     conn.close()
-grabCourse(u'鲁教版',URL)
+
+def getVideoAttributeFromExcel(excelfile):
+    if not os.path.exists(excelfile):
+        logger.error("Excel File Error, The File %s Does Not Exist", excelfile)
+	return
+    book = xlrd.open_workbook(excelfile)
+    for sheet_name in book.sheet_names():
+        table = book.sheet_by_name(sheet_name)
+	for row in range(table.nrows):
+	    url = table.cell(row, 0).value
+            grabCourse(u'鲁教版',row*100, url)
+getVideoAttributeFromExcel('lujiaobanyuwen.xlsx')
 
