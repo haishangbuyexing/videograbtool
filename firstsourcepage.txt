@@ -1,0 +1,1846 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="utf-8" />
+    <meta content="webkit" name="renderer" />
+    <link href="http://img9.tongzhuo100.com/css/normalize.css" rel="stylesheet" />
+    <link href="http://img9.tongzhuo100.com/css/index.css?201606300900" rel="stylesheet" />
+    <link href="http://img9.tongzhuo100.com/skin/pink.flag/jplayer.pink.flag.css" rel="stylesheet" />
+    <link href="http://img9.tongzhuo100.com/css/style.css?201606300900" rel="stylesheet" />
+    <script src="http://img9.tongzhuo100.com/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="http://img9.tongzhuo100.com/dist/jplayer/jquery.jplayer.js" type="text/javascript"></script>
+    <script src="http://img9.tongzhuo100.com/js/indexreg.js" type="text/javascript"></script>
+    <title>同桌100学习网 - 中小学同步课程教育网(官方网站)</title>
+    <meta content="同桌100,同桌100学习网,同桌100学习卡,教育网,教育视频,家教,家教网,学习网,学习,视频,语文教育视频,数学教育视频,英语教育视频,奥数教育视频,书法视频,科学教育视频" http-equiv="keywords" />
+    <meta content="同桌100学习网可以让每个小学生 初中生 高中生 随时随地与名师面对面交流学习,辅导请假耽误的功课，讲解在学校没听懂的难点，指导不会的作业。从此家长再也不用为孩子的学习发愁了,同桌100学习网是您24小时贴心家教" http-equiv="description" />
+    <!--[if IE 7]>
+    <script type="text/javascript" src="http://img9.tongzhuo100.com/js/ie78.js"></script>
+    <![endif]-->
+    <!--[if IE 8]>
+    <script type="text/javascript" src="http://img9.tongzhuo100.com/js/ie78.js"></script>
+    <![endif]-->
+    <script charset="utf-8" src="ckplayer/ckplayer.js" type="text/javascript"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+<!--顶部导航-->
+<link type="text/css" href="http://img9.tongzhuo100.com/css/same.css?201607041600" rel="stylesheet" />
+<link type="text/css" href="http://img9.tongzhuo100.com/css/zzsc.css?201607041600" rel="stylesheet" />
+<!-- ie8,9兼容模式下JSON未定义 -->
+<script src="http://img9.tongzhuo100.com/js/json2.js" type="text/javascript"></script>
+
+<!--顶部导航-->
+<div class="Header">
+    <div class="head">
+        <div class="logo">
+            <img src="http://img9.tongzhuo100.com/common/img/logo.png" />
+        </div>
+        <div class="list">
+            <ul>
+                <li><a href="http://www.tongzhuo100.com/">首页</a></li>
+                <li><a href="http://www.tongzhuo100.com/study_report/video_report.php" id="navStudyReport">学习记录</a></li>
+                <li><a href="http://ask.tongzhuo100.com/" id="navHomeWorkHelp">作业辅导</a></li>
+                <li><a href="http://www.tongzhuo100.com/examination/" id="navExamination">模拟考试</a></li>
+                <li><a href="http://www.tongzhuo100.com/downloads/" id="navDownload">试卷/课件</a></li>
+                <li><a href="http://www.tongzhuo100.com/old_index.php">访问旧版</a></li>
+                <li><a href="http://www.tongzhuo100.com/music" id="navMusic">音乐专区</a></li>
+            </ul>
+        </div>
+        <div id="loginreg" class="loginreg" style="display: block;">
+            <div style="display:none" id="nologinreg">
+                <a href="http://www.tongzhuo100.com/login/" class="reg">注册</a>
+                <a href="http://www.tongzhuo100.com/login/v/?url=http://www.tongzhuo100.com/" class="login">登录</a>
+            </div>
+            <div id="loginreghidden" class="loginreghidden" style="display: block;">
+                <ul>
+                    <li class="a4"><a href="http://www.tongzhuo100.com/online/index.php">购买学习卡</a></li>
+                    <li id="luquanhao" class="a1"><span style="display:none" id="newsRemindAll"></span></li>
+                    <li id="a2" class="a2">|<a href="http://www.tongzhuo100.com/space/">我的资料</a>|</li>
+                    <li class="a3"><a href="http://www.tongzhuo100.com/logout.php">安全退出</a></li>
+                    <div style="clear:both"></div>
+                </ul>
+                <ul style="display:none" id="News" class="News">
+                    <li><a href="http://www.tongzhuo100.com/space/new_answer.php"><span id="newsReply">0</span>条新回答 <i style="display:none" id="newsRemindReply"></i></a></li>
+                    <li><a href="http://www.tongzhuo100.com/space/new_message.php"><span id="newsMessage">0</span>条系统消息 <i style="display:none" id="newsRemindMessage"></i></a></li>
+                </ul>
+            </div>
+            <div style="display:none" id="Popup" class="Popup">
+                <div class="Popupnone">
+                    <div class="popupTop">
+                        <img src="http://img9.tongzhuo100.com/img/bottom1.png" id="top_sphoto" class="img" />
+                        <div class="word">
+                            <p title="未显示" id="top_nickname" class="name">18500951888</p>
+                            <p class="money">同币：<span id="top_coin">0</span><a href="http://www.tongzhuo100.com/alliance/index.php">提现</a></p>
+                            <!--<p class="integral">积分：<span id="top_totals" id="top_card_end_time">未显示</span></p>-->
+                        </div>
+                        <div style="clear:both"></div>
+                    </div>
+                    <p class="days">学习卡使用时间剩余(天)：<span id="top_card_end_time">218</span></p>
+                    <div class="popupBottom">
+                        <a href="http://www.tongzhuo100.com/space">我的资料</a>
+                        <a href="http://www.tongzhuo100.com/study_report/video_report.php">学习记录</a>
+                        <a href="http://www.tongzhuo100.com/space/activation_card.php">激活学习卡</a>
+                        <a href="http://www.tongzhuo100.com/help/">帮助中心</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--搜索框-->
+
+<div class="searchback">
+    <div class="search">
+        <div class="connect">
+            <a class="connectimg"><img src="http://img9.tongzhuo100.com/img/phone.png" /></a>
+            <a class="connect1">学习卡订购热线：</a>
+            <a class="connect2">4006-3456-99</a>
+            <a class="connect1">（早7:00到晚22:30）</a>
+        </div>
+        <div class="searchmain">
+            <a class="Schoose">
+                <span value="http://www.tongzhuo100.com/video_show/video_select.shtml#" id="searchIndex">视频</span>
+                <img src="http://img9.tongzhuo100.com/img/down.png" />
+            </a>
+            <div class="Slist">
+                <a value="http://www.tongzhuo100.com/video_show/video_select.shtml#">视频</a>
+                <a value="http://download.tongzhuo100.com/#">试卷</a>
+                <a value="http://www.tongzhuo100.com/examination/#">模考</a>
+                <a value="http://ask.tongzhuo100.com/search.php?titles=">作业</a>
+            </div>
+            <div class="Sinput">
+                <input type="text" alt="请输入您想查询的内容" placeholder="请输入您想查询的内容" id="searchs" />
+            </div>
+            <div class="Sbutton">
+                <input type="button" onclick="return searchData();" value="搜索" />
+            </div>
+        </div>
+        <div class="index_selects">
+            <div class="index_s11 .index_s11show">
+                <img src="http://img9.tongzhuo100.com/img/index_class_select.png" class="index_class_select" />
+                <span>选择课程</span>
+            </div>
+            <div class="index_none" style="overflow: hidden; height: 25.6222px; display: block; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+                <div data_state="0" class="index_model index_model1">
+                    <h5><span>选择年级</span></h5>
+                    <p>
+                        <a href="http://www.tongzhuo100.com/primary/">小学</a>
+                        <a href="http://www.tongzhuo100.com/primary/junior.shtml">初中</a>
+                        <a href="http://www.tongzhuo100.com/primary/high.shtml"> 高中</a>
+                    </p>
+                </div>
+                <div data_state="0" class="index_model index_model2">
+                    <h5><span>同步课程</span></h5>
+                    <p>
+                        <a class="writenone1" href="http://www.tongzhuo100.com/subject/1.html">语文</a>
+                        <a class="writenone1" href="http://www.tongzhuo100.com/subject/2.html">数学</a>
+                        <a class="writenone1" href="http://www.tongzhuo100.com/english/index.shtml">英语</a>
+                        <a class="writenone1" href="http://www.tongzhuo100.com/subject/5.html">物理</a>
+
+                    </p>
+                    <p>
+                        <a class="writenone1" href="http://www.tongzhuo100.com/subject/6.html">化学</a>
+                        <a class="writenone1" href="http://www.tongzhuo100.com/subject/11.html">生物</a>
+                        <a class="writenone1" href="http://www.tongzhuo100.com/subject/4.html">政治</a>
+                        <a class="writenone1" href="http://www.tongzhuo100.com/subject/7.html">历史</a>
+                    </p>
+                    <p>
+                        <a class="writenone9" href="http://www.tongzhuo100.com/subject/8.html">地理</a>
+                        <a class="writenone1" href="http://www.tongzhuo100.com/topics/calligraphy.shtml">书法</a>
+                        <a class="writenone1" href="http://www.tongzhuo100.com/topics/symbol.shtml">音标</a>
+                        <a class="writenone1" href="http://www.tongzhuo100.com/topics/write.shtml">作文</a>
+                        <!--<a href="#" class="writenone1">应用题</a>-->
+
+
+
+                    </p>
+                    <p>
+
+                        <a class="writenone10" href="http://www.tongzhuo100.com/topics/sprint/primary.shtml">小升初</a>
+                        <a class="writenone10" href="http://www.tongzhuo100.com/topics/review/junior.shtml">中考</a>
+                        <a class="writenone10" href="http://www.tongzhuo100.com/topics/review/high.shtml">    高考</a>
+                        <!--<a href="#" class="writenone6">绘画</a>-->
+                    </p>
+                </div>
+                <div data_state="0" class="index_model index_model3">
+                    <h5><span>综合课程</span></h5>
+                    <p>
+                        <a class="writenone2" href="http://www.tongzhuo100.com/examination/knowledge.php">重点解析</a>
+                        <a class="writenone2" href="http://www.tongzhuo100.com/examination/">模拟考试</a>
+                        <a class="writenone2" href="http://ask.tongzhuo100.com/">作业问答</a>
+                    </p>
+
+                    <p>
+                        <a class="writenone2" href="http://www.tongzhuo100.com/video_show/topics_select.shtml#review">单元复习</a>
+                        <a class="writenone2" href="http://www.tongzhuo100.com/video_show/topics_select.shtml#review">期中复习</a>
+                        <a class="writenone2" href="http://www.tongzhuo100.com/video_show/topics_select.shtml#review">期末复习</a>
+                    </p>
+                    <p>
+
+                        <!--<a href="http://www.tongzhuo100.com/topics/family.shtml" class="writenone2">家庭教育</a>-->
+                        <a class="writenone2" href="http://www.tongzhuo100.com/topics/dictation.shtml">生字听写</a>
+                        <a class="writenone2" href="http://www.tongzhuo100.com/topics/word.shtml">单词听写</a>
+                        <a class="writenone2" href="http://www.tongzhuo100.com/topics/recite.shtml">同步阅读</a>
+
+                    </p>
+                </div>
+                <div data_state="0" class="index_model index_model4">
+                    <p>
+                        <a class="writenone11" href="http://www.tongzhuo100.com/video_show/video_select.shtml#%E5%BA%94%E7%94%A8%E9%A2%98">应用题</a>
+                        <a class="writenone11" href="http://www.tongzhuo100.com/english/index.shtml">英语专区</a>
+                        <!--<a href="http://www.tongzhuo100.com/topics/family.shtml" class="writenone2">家庭教育</a>-->
+                        <a class="writenone11" href="http://www.tongzhuo100.com/topics/toefl.shtml">托福雅思</a>
+                        <!--<a href="http://video30.tongzhuo100.com/" class="writenone11" style="color:red;">新课预习</a>-->
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--<div class="index_selects">-->
+        <!--<div class="index_s11">-->
+        <!--<img class="index_class_select" src="http://img9.tongzhuo100.com/img/index_class_select.png" />-->
+        <!--<span>选择课程</span>-->
+        <!--</div>-->
+        <!--<div class="index_none">-->
+        <!--<div class="index_model index_model1" data_state="0">-->
+        <!--<h5><span>选择年级</span><span class="index_model_right">></span></h5>-->
+        <!--<p>-->
+        <!--<span class="small">一年级</span>-->
+        <!--<span class="small">二年级</span>-->
+        <!--<span class="small">三年级</span>-->
+        <!--</p>-->
+        <!--<p>-->
+        <!--<span class="small">四年级</span>-->
+        <!--<span class="small">五年级</span>-->
+        <!--<span class="small">六年级</span>-->
+        <!--</p>-->
+        <!--<p>-->
+        <!--<span class="middle">七年级</span>-->
+        <!--<span class="middle">八年级</span>-->
+        <!--<span class="middle">九年级</span>-->
+        <!--</p>-->
+        <!--<p>-->
+        <!--<span  class="high">高一</span>-->
+        <!--<span class="high">高二</span>-->
+        <!--<span class="high">高三</span>-->
+        <!--</p>-->
+        <!--</div>-->
+        <!--<div class="index_model index_model2" data_state="0">-->
+        <!--<h5><span>选择科目</span><span class="index_model_right">></span></h5>-->
+        <!--<p>-->
+        <!--<span class="writenone1">语文</span>-->
+        <!--<span class="writenone1">数学</span>-->
+        <!--<span class="writenone1">英语</span>-->
+        <!--</p>-->
+        <!--<p>-->
+        <!--<span class="writenone1">政治</span>-->
+        <!--<span class="writenone1">历史</span>-->
+        <!--<span class="writenone1">地理</span>-->
+        <!--</p>-->
+        <!--<p>-->
+        <!--<span class="writenone1">物理</span>-->
+        <!--<span class="writenone1">化学</span>-->
+        <!--<span class="writenone1">生物</span>-->
+        <!--</p>-->
+        <!--<p>-->
+        <!--&lt;!&ndash;<span>科学</span>&ndash;&gt;-->
+        <!--<span><a href="http://www.tongzhuo100.com/topics/calligraphy.shtml">书法</a></span>-->
+        <!--<span><a href="http://www.tongzhuo100.com/topics/symbol.shtml">音标</a></span>-->
+        <!--<span class="write" >作文</span> -->
+        <!--</p>-->
+        <!--<p>-->
+        <!--<span class="index_model2_span"><a href="http://www.tongzhuo100.com/examination/">模拟考试</a></span>-->
+        <!--<span class="index_model2_span"><a href="http://download.tongzhuo100.com/#1_1">试卷下载</a></span>-->
+        <!--</p>-->
+        <!--</div>-->
+        <!--<div class="index_model index_model3" data_state="0">-->
+        <!--<h5><span>英语课程专区</span><span class="index_model_right">></span></h5>-->
+        <!--</div>-->
+        <!--<div class="index_model index_model3" data_state="0">-->
+        <!--<h5><span>选择版本学习</span><span class="index_model_right">></span></h5>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="index_selects2">-->
+        <!--&lt;!&ndash; 小学对应课程&ndash;&gt;-->
+        <!--<div class="index_selects_div primary_school">-->
+        <!--<div class="index_selects_divT">-->
+        <!--<p class="float-left"><span class="index_select_1">已选择：</span><span class="index_select_type index_select_class2"></span></p>-->
+        <!--<p class="index_select_class2 index_select_addclass1">请继续选择科目</p>-->
+        <!--</div>-->
+        <!--<div class="index_selects_divB">-->
+        <!--<p class="addclass2"><a href="http://primary.tongzhuo100.com/">语文</a><a href="http://primary.tongzhuo100.com/">数学</a><a href="http://primary.tongzhuo100.com/">英语</a></p>-->
+        <!--&lt;!&ndash;<p class="MHClass addclass2""><a>政治</a><a>历史</a><a>地理</a></p>&ndash;&gt;-->
+        <!--&lt;!&ndash;<p class="MHClass addclass2"><a>物理</a><a>化学</a><a>生物</a></p>&ndash;&gt;-->
+        <!--&lt;!&ndash;<p class="SClass addclass2">&ndash;&gt;-->
+        <!--&lt;!&ndash;<a href="http://www.tongzhuo100.com/topics/music.shtml">音乐</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;<a href="http://www.tongzhuo100.com/topics/painting.shtml">绘画</a> &ndash;&gt;-->
+        <!--&lt;!&ndash;<a href="http://www.tongzhuo100.com/topics/recite.shtml">朗诵</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;</p>&ndash;&gt;-->
+        <!--<p class="addclass3">-->
+        <!--<a href="#" style="color:#a50310">暑期新课预习</a>-->
+        <!--<a href="#">小升初衔接</a>-->
+        <!--<a href="http://www.tongzhuo100.com/video_show/topics_select.shtml#review">期中总复习</a>-->
+        <!--<a href="http://www.tongzhuo100.com/video_show/topics_select.shtml#review">期末总复习</a>-->
+        <!--<a href="http://www.tongzhuo100.com/examination/">模拟考试</a>-->
+        <!--<a class="MHClass" href="http://download.tongzhuo100.com/#1_1">试卷下载</a>-->
+
+        <!--<a href="#">应用题辅导</a>-->
+
+        <!--<a href="http://www.tongzhuo100.com/video_show/topics_select.shtml#review">知识点复习</a>-->
+        <!--<a class="SClass" href="http://ask.tongzhuo100.com/"  style="color:#a50310">作业辅导</a>-->
+        <!--<a href="http://www.tongzhuo100.com/topics/writex.shtml">作文辅导</a>-->
+        <!--<a class="SClass" href="http://vd.tongzhuo100.com/">生字听写</a>-->
+        <!--<a href="#">单词听写</a>-->
+        <!--&lt;!&ndash;<a class="write1 MHClass" href="http://www.tongzhuo100.com/topics/writez.shtml">中学作文</a>&ndash;&gt;-->
+        <!--</p>-->
+        <!--<p class="SClass addclass3">-->
+        <!--&lt;!&ndash;<a href="http://www.tongzhuo100.com/topics/calligraphy.shtml">书法辅导</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;<a class="write1 MHClass" href="http://www.tongzhuo100.com/topics/writez.shtml">中学作文</a>&ndash;&gt;-->
+        <!--<a  href="http://www.tongzhuo100.com/topics/symbol.shtml">英语音标</a>-->
+        <!--<a href="http://www.tongzhuo100.com/topics/calligraphy.shtml">书法辅导</a>-->
+        <!--</p>-->
+        <!--&lt;!&ndash;<p class="MHClass">-->
+        <!--<a href="http://www.tongzhuo100.com/topics/calligraphy.shtml">出国英语辅导</a>-->
+        <!--<a href="http://www.tongzhuo100.com/topics/index.shtml">留学英语辅导</a>-->
+        <!--<a href="#">托福雅思</a>-->
+        <!--</p>&ndash;&gt;-->
+        <!--<p class="addclass3">-->
+        <!--<a href="http://www.tongzhuo100.com/topics/recite.shtml" style="color:#a50310">阅读朗诵</a>-->
+        <!--<a href="http://www.tongzhuo100.com/topics/music.shtml">音乐美术</a>-->
+        <!--&lt;!&ndash;<a href="http://www.tongzhuo100.com/topics/family.shtml">家庭教育</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;<a href="http://www.tongzhuo100.com/topics/safe.shtml">安全教育</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;<a href="">应用题辅导</a>&ndash;&gt;-->
+        <!--</p>-->
+        <!--<div class="fire clear">-->
+        <!--<div class="fire_img"><img src="http://img9.tongzhuo100.com/img/fire.png"/></div>-->
+        <!--<p><span style="font-weight: bold;color:#a50310">赠送:</span>预习复习考试全图</p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash; 七年级对应课程&ndash;&gt;-->
+        <!--<div class="index_selects_div middle_school1">-->
+        <!--<div class="index_selects_divT">-->
+        <!--<p class="float-left"><span class="index_select_1">已选择：</span><span class="index_select_type index_select_class2"></span></p>-->
+        <!--<p class="index_select_class2 index_select_addclass1">请继续选择科目</p>-->
+        <!--</div>-->
+        <!--<div class="index_selects_divB middle_school_aheight">-->
+        <!--<p class="addclass2"><a href="http://junior.tongzhuo100.com/">语文</a><a href="http://junior.tongzhuo100.com/">数学</a><a href="http://junior.tongzhuo100.com/">英语</a></p>-->
+        <!--<p class="MHClass addclass2"><a href="http://junior.tongzhuo100.com/">政治</a><a href="http://junior.tongzhuo100.com/">历史</a><a href="http://junior.tongzhuo100.com/">地理</a></p>-->
+        <!--<p class="MHClass addclass2"><a href="http://junior.tongzhuo100.com/">生物</a><a href="#" style="color:#a50310" class="special_width7">暑期新课预习</a></p>-->
+        <!--<p class="SClass addclass2">-->
+        <!--<a href="http://www.tongzhuo100.com/topics/music.shtml">音乐</a>-->
+        <!--<a href="http://www.tongzhuo100.com/topics/painting.shtml">美术</a>-->
+        <!--<a href="http://www.tongzhuo100.com/topics/recite.shtml">朗诵</a>-->
+        <!--</p>-->
+        <!--<p class="addclass3">-->
+        <!--<a href="http://www.tongzhuo100.com/examination/">模拟考试</a>-->
+        <!--<a class="MHClass" href="http://download.tongzhuo100.com/#1_1">试卷下载</a>-->
+        <!--<a class="SClass" href="http://ask.tongzhuo100.com/">作业辅导</a>-->
+        <!--<a href="http://www.tongzhuo100.com/video_show/topics_select.shtml#review">知识点复习</a>-->
+        <!--<a href="http://www.tongzhuo100.com/video_show/topics_select.shtml#review">期中总复习</a>-->
+        <!--<a href="http://www.tongzhuo100.com/video_show/topics_select.shtml#review">期末总复习</a>-->
+        <!--&lt;!&ndash;<a class="write1 MHClass" href="http://www.tongzhuo100.com/topics/writez.shtml">中学作文</a>&ndash;&gt;-->
+        <!--</p>-->
+        <!--<p class="SClass addclass3">-->
+        <!--&lt;!&ndash;<a href="http://www.tongzhuo100.com/topics/calligraphy.shtml">书法辅导</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;<a href="http://www.tongzhuo100.com/topics/writex.shtml">小学作文</a>&ndash;&gt;-->
+        <!--<a class="write1 MHClass" href="http://www.tongzhuo100.com/topics/writez.shtml">中学作文</a>-->
+        <!--<a  href="http://www.tongzhuo100.com/topics/symbol.shtml">英语音标</a>-->
+
+        <!--</p>-->
+        <!--&lt;!&ndash;<p class="MHClass">-->
+        <!--<a href="http://www.tongzhuo100.com/topics/calligraphy.shtml">出国英语辅导</a>-->
+        <!--<a href="http://www.tongzhuo100.com/topics/index.shtml">留学英语辅导</a>-->
+        <!--<a href="#">托福雅思</a>-->
+        <!--</p>&ndash;&gt;-->
+        <!--<p class="addclass3">-->
+        <!--<a class="SClass" href="http://vd.tongzhuo100.com/">生字听写</a>-->
+        <!--<a href="http://www.tongzhuo100.com/topics/calligraphy.shtml">书法辅导</a>-->
+        <!--<a href="http://www.tongzhuo100.com/topics/family.shtml">家庭教育</a>-->
+        <!--<a href="http://www.tongzhuo100.com/topics/safe.shtml">安全教育</a>-->
+        <!--&lt;!&ndash;<a href="">应用题辅导</a>&ndash;&gt;-->
+        <!--</p>-->
+        <!--<div class="fire clear">-->
+        <!--<div class="fire_img"><img src="http://img9.tongzhuo100.com/img/fire.png"/></div>-->
+        <!--<p><span style="font-weight: bold">赠送:</span>预习复习考试全图</p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash; 八年级对应课程&ndash;&gt;-->
+        <!--<div class="index_selects_div middle_school2">-->
+        <!--<div class="index_selects_divT">-->
+        <!--<p class="float-left"><span class="index_select_1">已选择：</span><span class="index_select_type index_select_class2"></span></p>-->
+        <!--<p class="index_select_class2 index_select_addclass1">请继续选择科目</p>-->
+        <!--</div>-->
+        <!--<div class="index_selects_divB middle_school_aheight">-->
+        <!--<p class="addclass2"><a href="http://junior.tongzhuo100.com/">语文</a><a href="http://junior.tongzhuo100.com/">数学</a><a href="http://junior.tongzhuo100.com/">英语</a></p>-->
+        <!--<p class="MHClass addclass2"><a href="http://junior.tongzhuo100.com/">政治</a><a href="http://junior.tongzhuo100.com/">历史</a><a href="http://junior.tongzhuo100.com/">地理</a></p>-->
+        <!--<p class="MHClass addclass2"><a href="http://junior.tongzhuo100.com/">物理</a><a href="http://junior.tongzhuo100.com/">生物</a><a href="#" style="color:#a50310" class="special_width8">暑期新课预习</a></p>-->
+        <!--<p class="SClass addclass2">-->
+        <!--<a href="http://www.tongzhuo100.com/topics/music.shtml">音乐</a>-->
+        <!--<a href="http://www.tongzhuo100.com/topics/painting.shtml">美术</a>-->
+        <!--<a href="http://www.tongzhuo100.com/topics/recite.shtml">朗诵</a>-->
+        <!--</p>-->
+        <!--<p class="addclass3">-->
+        <!--<a href="http://www.tongzhuo100.com/examination/">模拟考试</a>-->
+        <!--<a class="MHClass" href="http://download.tongzhuo100.com/#1_1">试卷下载</a>-->
+        <!--<a class="SClass" href="http://ask.tongzhuo100.com/">作业辅导</a>-->
+        <!--<a href="http://www.tongzhuo100.com/video_show/topics_select.shtml#review">知识点复习</a>-->
+        <!--<a href="http://www.tongzhuo100.com/video_show/topics_select.shtml#review">期中总复习</a>-->
+        <!--<a href="http://www.tongzhuo100.com/video_show/topics_select.shtml#review">期末总复习</a>-->
+        <!--</p>-->
+        <!--<p class="SClass addclass3">-->
+        <!--<a class="write1 MHClass" href="http://www.tongzhuo100.com/topics/writez.shtml">中学作文</a>-->
+
+        <!--&lt;!&ndash;<a href="http://www.tongzhuo100.com/topics/writex.shtml">小学作文</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;<a class="write1 MHClass" href="http://www.tongzhuo100.com/topics/writez.shtml">中学作文</a>&ndash;&gt;-->
+        <!--<a  href="http://www.tongzhuo100.com/topics/symbol.shtml">英语音标</a>-->
+
+        <!--</p>-->
+        <!--&lt;!&ndash;<p class="MHClass">-->
+        <!--<a href="http://www.tongzhuo100.com/topics/calligraphy.shtml">出国英语辅导</a>-->
+        <!--<a href="http://www.tongzhuo100.com/topics/index.shtml">留学英语辅导</a>-->
+        <!--<a href="#">托福雅思</a>-->
+        <!--</p>&ndash;&gt;-->
+        <!--<p class="addclass3">-->
+        <!--<a class="SClass" href="http://vd.tongzhuo100.com/">生字听写</a>-->
+        <!--<a href="http://www.tongzhuo100.com/topics/calligraphy.shtml">书法辅导</a>-->
+        <!--<a href="http://www.tongzhuo100.com/topics/family.shtml">家庭教育</a>-->
+        <!--<a href="http://www.tongzhuo100.com/topics/safe.shtml">安全教育</a>-->
+        <!--&lt;!&ndash;<a href="">应用题辅导</a>&ndash;&gt;-->
+        <!--</p>-->
+        <!--<div class="fire clear">-->
+        <!--<div class="fire_img"><img src="http://img9.tongzhuo100.com/img/fire.png"/></div>-->
+        <!--<p><span style="font-weight: bold">赠送:</span>预习复习考试全图</p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash; 九年级对应课程&ndash;&gt;-->
+        <!--<div class="index_selects_div middle_school3">-->
+        <!--<div class="index_selects_divT">-->
+        <!--<p class="float-left"><span class="index_select_1">已选择：</span><span class="index_select_type index_select_class2"></span></p>-->
+        <!--<p class="index_select_class2 index_select_addclass1">请继续选择科目</p>-->
+        <!--</div>-->
+        <!--<div class="index_selects_divB middle_school_aheight">-->
+        <!--<p class="addclass2"><a href="http://junior.tongzhuo100.com/">语文</a><a href="http://junior.tongzhuo100.com/">数学</a><a href="http://junior.tongzhuo100.com/">英语</a></p>-->
+        <!--<p class="MHClass addclass2"><a href="http://junior.tongzhuo100.com/">政治</a><a href="http://junior.tongzhuo100.com/">历史</a><a href="http://junior.tongzhuo100.com/">地理</a></p>-->
+        <!--<p class="MHClass addclass2"><a href="http://junior.tongzhuo100.com/">物理</a><a href="http://junior.tongzhuo100.com/">化学</a><a href="http://junior.tongzhuo100.com/">生物</a></p>-->
+        <!--<p class="SClass addclass2">-->
+        <!--<a href="http://www.tongzhuo100.com/topics/music.shtml">音乐</a>-->
+        <!--<a href="http://www.tongzhuo100.com/topics/painting.shtml">美术</a>-->
+        <!--<a href="http://www.tongzhuo100.com/topics/recite.shtml">朗诵</a>-->
+        <!--</p>-->
+        <!--<p class="addclass3">-->
+        <!--<a href="http://www.tongzhuo100.com/examination/">模拟考试</a>-->
+        <!--<a class="MHClass" href="http://download.tongzhuo100.com/#1_1">试卷下载</a>-->
+        <!--<a class="SClass" href="http://ask.tongzhuo100.com/">作业辅导</a>-->
+        <!--<a href="http://www.tongzhuo100.com/video_show/topics_select.shtml#review">知识点复习</a>-->
+        <!--<a href="http://www.tongzhuo100.com/video_show/topics_select.shtml#review">期中总复习</a>-->
+        <!--<a href="http://www.tongzhuo100.com/video_show/topics_select.shtml#review">期末总复习</a>-->
+        <!--</p>-->
+        <!--<p class="SClass addclass3">-->
+        <!--<a class="write1 MHClass" href="http://www.tongzhuo100.com/topics/writez.shtml">中学作文</a>-->
+        <!--&lt;!&ndash;<a href="http://www.tongzhuo100.com/topics/writex.shtml">小学作文</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;<a class="write1 MHClass" href="http://www.tongzhuo100.com/topics/writez.shtml">中学作文</a>&ndash;&gt;-->
+        <!--<a  href="http://www.tongzhuo100.com/topics/symbol.shtml">英语音标</a>-->
+
+        <!--</p>-->
+        <!--&lt;!&ndash;<p class="MHClass">-->
+        <!--<a href="http://www.tongzhuo100.com/topics/calligraphy.shtml">出国英语辅导</a>-->
+        <!--<a href="http://www.tongzhuo100.com/topics/index.shtml">留学英语辅导</a>-->
+        <!--<a href="#">托福雅思</a>-->
+        <!--</p>&ndash;&gt;-->
+        <!--<p class="addclass3">-->
+        <!--<a class="SClass" href="http://vd.tongzhuo100.com/">生字听写</a>-->
+        <!--<a href="http://www.tongzhuo100.com/topics/calligraphy.shtml">书法辅导</a>-->
+        <!--<a href="http://www.tongzhuo100.com/topics/family.shtml">家庭教育</a>-->
+        <!--<a href="#" style="color:#a50310" class="special_width7">暑期新课预习</a>-->
+        <!--&lt;!&ndash;<a href="">应用题辅导</a>&ndash;&gt;-->
+        <!--</p>-->
+        <!--<div class="fire clear">-->
+        <!--<div class="fire_img"><img src="http://img9.tongzhuo100.com/img/fire.png"/></div>-->
+        <!--<p><span style="font-weight: bold">赠送:</span>预习复习考试全图</p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash; 高一至高三右侧&ndash;&gt;-->
+        <!--<div class="index_selects_div highschool">-->
+        <!--<div class="index_selects_divT">-->
+        <!--<p class="float-left"><span class="index_select_1">已选择：</span><span class="index_select_type index_select_class2"></span></p>-->
+        <!--<p class="index_select_class2 index_select_addclass1">请继续选择科目</p>-->
+        <!--</div>-->
+        <!--<div class="index_selects_divB">-->
+        <!--<p class="addclass2"><a href="http://high.tongzhuo100.com/">语文</a><a href="http://high.tongzhuo100.com/">数学</a><a href="http://high.tongzhuo100.com/">英语</a></p>-->
+        <!--<p class="MHClass addclass2"><a href="http://high.tongzhuo100.com/">政治</a><a href="http://high.tongzhuo100.com/">历史</a><a href="http://high.tongzhuo100.com/">地理</a></p>-->
+        <!--<p class="MHClass addclass2"><a href="http://high.tongzhuo100.com/">物理</a><a href="http://high.tongzhuo100.com/">化学</a><a href="http://high.tongzhuo100.com/">生物</a></p>-->
+        <!--<p class="SClass addclass2">-->
+        <!--<a href="#" class="word_width" style="color:#a50310">暑期新课预习 </a>-->
+        <!--<a href="#" class="word_width">高考冲刺</a>-->
+        <!--</p>-->
+        <!--<p class="SClass addclass2">-->
+        <!--<a href="http://www.tongzhuo100.com/topics/writez.shtml" class="word_width">高考作文辅导 </a>-->
+        <!--<a href="http://ask.tongzhuo100.com/" class="word_width">作业辅导</a>-->
+        <!--<a class="write1 MHClass word_width" href="http://www.tongzhuo100.com/examination/">模拟考试</a>-->
+        <!--<a href="http://www.tongzhuo100.com/downloads/" class="word_width">试卷下载</a>-->
+        <!--</p>-->
+        <!--<p class="addclass3">-->
+        <!--<a href="http://www.tongzhuo100.com/video_show/topics_select.shtml#review" class="word_width">单元复习</a>-->
+        <!--<a href="http://www.tongzhuo100.com/video_show/topics_select.shtml#review" class="word_width">期中总复习</a>-->
+        <!--<a class="SClass word_width" href="http://www.tongzhuo100.com/video_show/topics_select.shtml#review">期末总复习</a>-->
+        <!--<a href="http://www.tongzhuo100.com/topics/family.shtml" class="word_width">家庭教育</a>-->
+
+        <!--</p>-->
+        <!--<p class="SClass addclass3">-->
+        <!--&lt;!&ndash;<a href="http://www.tongzhuo100.com/topics/calligraphy.shtml">试卷下载</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;<a class="write1 MHClass word_width" href="http://www.tongzhuo100.com/topics/writez.shtml">青春期教育</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;<a href="http://www.tongzhuo100.com/topics/calligraphy.shtml" class="word_width">试卷下载</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;<a  href="http://www.tongzhuo100.com/topics/symbol.shtml">英语音标</a>&ndash;&gt;-->
+
+        <!--</p>-->
+        <!--&lt;!&ndash;<p class="MHClass">-->
+        <!--<a href="http://www.tongzhuo100.com/topics/calligraphy.shtml">出国英语辅导</a>-->
+        <!--<a href="http://www.tongzhuo100.com/topics/index.shtml">留学英语辅导</a>-->
+        <!--<a href="#">托福雅思</a>-->
+        <!--</p>&ndash;&gt;-->
+        <!--&lt;!&ndash;<p class="addclass3">&ndash;&gt;-->
+        <!--&lt;!&ndash;<a class="SClass" href="http://vd.tongzhuo100.com/">生字听写</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;<a class="MHClass" href="http://download.tongzhuo100.com/#1_1">试卷下载</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;<a href="http://www.tongzhuo100.com/topics/family.shtml">家庭教育</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;<a href="http://www.tongzhuo100.com/topics/safe.shtml">安全教育</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;&lt;!&ndash;<a href="">应用题辅导</a>&ndash;&gt;&ndash;&gt;-->
+        <!--&lt;!&ndash;</p>&ndash;&gt;-->
+        <!--<div class="fire clear">-->
+        <!--<div class="fire_img"><img src="http://img9.tongzhuo100.com/img/fire.png"/></div>-->
+        <!--<p><span style="font-weight: bold">赠送:</span>预习复习考试全图</p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="index_selects_div">-->
+        <!--<div class="index_selects_divT">-->
+        <!--<p class="float-left"><span class="index_select_1">已选择科目:</span><span class="index_select_type index_select_class2"></span></p>-->
+        <!--<p class="index_select_class2 index_select_addclass1">请继续选择年级</p>-->
+        <!--</div>-->
+        <!--<div class="index_selects_divB grade_word">-->
+        <!--<p class="writenone">-->
+        <!--<a href="http://primary.tongzhuo100.com/">一年级</a>-->
+        <!--<a href="http://primary.tongzhuo100.com/">二年级</a>-->
+        <!--<a href="http://primary.tongzhuo100.com/">三年级</a>-->
+        <!--</p>-->
+        <!--<p class="writenone">-->
+        <!--<a href="http://primary.tongzhuo100.com/">四年级</a>-->
+        <!--<a href="http://primary.tongzhuo100.com/">五年级</a>-->
+        <!--<a href="http://primary.tongzhuo100.com/">六年级</a>-->
+        <!--</p>-->
+        <!--<p class="writenone">-->
+        <!--<a href="http://junior.tongzhuo100.com/">七年级</a>-->
+        <!--<a href="http://junior.tongzhuo100.com/">八年级</a>-->
+        <!--<a href="http://junior.tongzhuo100.com/">九年级</a>-->
+        <!--</p>-->
+        <!--<p class="writenone">-->
+        <!--<a href="http://high.tongzhuo100.com/">高一</a>-->
+        <!--<a href="http://high.tongzhuo100.com/">高二</a>-->
+        <!--<a href="http://high.tongzhuo100.com/">高三</a>-->
+        <!--</p>-->
+        <!--<p class="write1">	-->
+        <!--<a href="http://www.tongzhuo100.com/topics/writex.shtml">小学作文</a>-->
+        <!--<a href="http://www.tongzhuo100.com/topics/writez.shtml">中学作文</a>-->
+        <!--</p>-->
+        <!--<div class="fire clear">-->
+        <!--<div class="fire_img"><img src="http://img9.tongzhuo100.com/img/fire.png"/></div>-->
+        <!--<p><span style="font-weight: bold">赠送:</span>预习复习考试全图</p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!-- -->
+        <!--&lt;!&ndash; 英语专区&ndash;&gt;-->
+        <!--<div class="index_selects_div">-->
+        <!--<div class="index_selects_divT">-->
+        <!--<p class="float-left"><span class="index_select_1">英语专区:</span><span class="index_select_type index_select_class2"></span></p>-->
+        <!--<p class="index_select_class2 index_select_addclass1">请继续选择年级</p>-->
+        <!--</div>-->
+        <!--<div class="index_selects_divB grade_word">-->
+        <!--<p class="writenone">-->
+        <!--<a href="http://primary.tongzhuo100.com/" class="word_width2">北师大(一年级起点)</a>-->
+        <!--<a href="http://primary.tongzhuo100.com/" class="word_width2">北师大(三年级起点)</a>-->
+        <!--<a href="http://primary.tongzhuo100.com/" class="word_width2">外研社(一年级起点)</a>-->
+        <!--<a href="http://junior.tongzhuo100.com/" class="word_width2">外研社(三年级起点)</a>-->
+        <!--<a href="http://primary.tongzhuo100.com/" class="word_width1">人教PEP</a>-->
+        <!--<a href="http://primary.tongzhuo100.com/" class="word_width1">人教精通</a>-->
+        <!--</p>-->
+        <!--<p class="writenone">-->
+        <!--<a href="http://primary.tongzhuo100.com/" class="word_width1">人教新起点</a>-->
+        <!--<a href="http://junior.tongzhuo100.com/" class="word_width1">译林版</a>-->
+        <!--</p>-->
+        <!--<p class="writenone">-->
+
+        <!--<a href="http://junior.tongzhuo100.com/" class="word_width1">上海牛津版</a>-->
+        <!--<a href="http://high.tongzhuo100.com/" class="word_width1">鲁教版</a>-->
+        <!--</p>-->
+        <!--<p class="writenone">-->
+        <!--<a href="http://high.tongzhuo100.com/" class="word_width1">仁爱版</a>-->
+        <!--<a href="http://high.tongzhuo100.com/" class="word_width1">广州教科版</a>-->
+        <!--</p>-->
+        <!--<p class="write1">-->
+
+        <!--<a href="http://www.tongzhuo100.com/topics/writex.shtml" class="word_width1">湘少版</a>-->
+        <!--</p>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="index_selects_div">-->
+        <!--<div class="index_selects_divT">-->
+        <!--<p class="index_selects_div3p">请选择版本：</p>-->
+        <!--</div>-->
+        <!--<div class="index_selects_divB grade_word">-->
+        <!--<p><a href="http://video2.tongzhuo100.com/">人教版</a><a href="http://video25.tongzhuo100.com/">苏教版</a><a href="http://video33.tongzhuo100.com/">鲁教版</a></p>-->
+        <!--<p><a href="http://video38.tongzhuo100.com/">北师大</a><a href="http://video41.tongzhuo100.com/">西师大</a><a href="http://eng10.tongzhuo100.com/">外研社</a></p>-->
+        <!--<p><a href="http://video60.tongzhuo100.com/">鄂教版</a><a href="http://video1.tongzhuo100.com/">华师大</a><a href="http://video3.tongzhuo100.com/">沪科版</a></p>-->
+        <!--<p><a href="http://video53.tongzhuo100.com/">浙教版</a><a href="http://video66.tongzhuo100.com/">语文S版</a><a href="http://video69.tongzhuo100.com/">冀教版</a></p>-->
+        <!--<p><a href="http://video67.tongzhuo100.com/">沪教版</a><a href="http://video72.tongzhuo100.com/">青岛版</a><a href="http://video68.tongzhuo100.com/">教科版</a></p>-->
+        <!--<p><a href="http://video73.tongzhuo100.com/">语文版</a><a href="http://video69.tongzhuo100.com/xiangjiaoban/">湘教版</a></p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+    </div>
+</div>
+<div class="bannartop"></div>
+<!--注册登录轮播图-->
+
+<!--登录头查询显示信息-->
+<script src="http://www.tongzhuo100.com/index/js/login_top.js?201606300900" type="text/javascript"></script>
+<!--导航栏特效-->
+<script src="http://www.tongzhuo100.com/index/js/nav.js?201606300900" type="text/javascript"></script>
+<!--搜索功能-->
+<script src="http://www.tongzhuo100.com/index/js/common_top.js" type="text/javascript"></script>
+<script>
+    $("#luquanhao,#News").mouseover(function(){
+        $("#News").show();
+    });
+    $("#luquanhao,#News").mouseout(function(){
+        $("#News").hide();
+    });
+</script>
+
+
+<!--注册登录轮播图-->
+<div class="bannar">
+    <div class="fullscreen">
+        <div class="pic">
+            <ul id="lunbo">
+                <li class="list1" style="display: none;"><a target="_blank" href="http://www.tongzhuo100.com/menu/introduce.php"></a></li>
+                <li class="list2" style="display: none;"><a target="_blank" href="http://www.tongzhuo100.com/online"></a></li>
+                <li class="list3" style="display: none;"><a target="_blank" href="http://www.tongzhuo100.com/Jion/"></a></li>
+                <li class="list4" style="display: list-item;"><a target="_blank" href="http://www.tongzhuo100.com/menu/introduce.php"></a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="bannarin">
+        <div class="dian">
+            <img src="http://img9.tongzhuo100.com/img/dian1.png" />
+            <img src="http://img9.tongzhuo100.com/img/dian1.png" />
+            <img src="http://img9.tongzhuo100.com/img/dian1.png" />
+            <img src="http://img9.tongzhuo100.com/img/dian2.png" />
+        </div>
+
+        <div style="display: none;" class="Dinggou">
+            <!-- 订购隐藏 -->
+            <a target="_blank" href="online/"><img src="http://img9.tongzhuo100.com/img/top_1.png" /></a>
+            <a target="_blank" href="online/cardBuy.php"><img src="http://img9.tongzhuo100.com/img/top_2.png" /></a>
+        </div>
+        <div id="inlogin" class="inlogin">
+            <div id="inloginT" class="inloginT">
+                <div class="inloginT1">
+                    <img src="http://img9.tongzhuo100.com/img/user.png" />
+                    <a>用户登录</a>
+                </div>
+                <div class="inloginT2">
+                    <img src="http://img9.tongzhuo100.com/img/to.png" />
+                    <a>免费注册</a>
+                </div>
+            </div>
+            <form method="post" action="http://www2.tongzhuo100.com/login/v/vlogins.php" id="Blogin" class="Blogin">
+                <input type="hidden" name="url" value="http://www.tongzhuo100.com/" />
+                <p>用户名<span class="surplustishi">注册时填写的手机号或字符</span></p>
+                <div class="index_input">
+                    <input type="text" name="usr" alt="请输入用户名或手机号" placeholder="请输入用户名或手机号" id="usr" />
+                    <img src="http://img9.tongzhuo100.com/img/index_right.png" class="index_tixing" />
+                    <div class="index_input_tx">
+                        <img src="http://img9.tongzhuo100.com/img/jiantouleft.png" />
+                        <a>请输入正确的手机号</a>
+                    </div>
+                </div>
+                <p>密码<span class="surplustishi rf">注册时填写的密码</span></p>
+                <div class="index_input">
+                    <input type="password" name="pwd" alt="请输入密码" id="pwd" />
+                    <img src="http://img9.tongzhuo100.com/img/index_wrong.png" class="index_tixing" />
+                    <div class="index_input_tx">
+                        <img src="http://img9.tongzhuo100.com/img/jiantouleft.png" />
+                        <a>请输入正确的密码</a>
+                    </div>
+                </div>
+                <p class="forget"><a target="_blank" href="http://www.tongzhuo100.com/login/retpwd/">忘记密码？</a></p>
+                <div class="helpcenter">
+                    <a href="http://www.tongzhuo100.com/space/activation_card.php">激活学习卡</a>
+                    <a target="_blank" href="http://www.tongzhuo100.com/help/">帮助中心</a>
+                </div>
+                <input type="submit" value="登录" class="logbttn" id="login" />
+            </form>
+            <form id="Breg" class="Breg">
+                <div class="index_input">
+                    <input type="text" alt="请填写您的手机号" onblur="CheckUser(this.value);" placeholder="请填写您的手机号" id="uphone" />
+                    <img src="http://img9.tongzhuo100.com/img/index_right.png" class="index_tixing" id="index_tixing1" />
+                    <div class="index_input_tx" id="phone_info">
+                        <img src="http://img9.tongzhuo100.com/img/jiantouleft.png" />
+                        <a id="phone_msg">请输入正确的手机号</a>
+                        <input type="hidden" value="" id="checkIsIndexUser" />
+                    </div>
+                </div>
+                <div class="index_input">
+                    <input type="password" alt="请输入8-20位密码[字母、数字、符号以上的组合]" placeholder="请输入密码" maxlength="20" onblur="CheckPwd(this.value);" id="upwd" />
+                    <img src="http://img9.tongzhuo100.com/img/index_right.png" class="index_tixing" id="index_tixing2" />
+                    <div class="index_input_tx" id="password_info">
+                        <img src="http://img9.tongzhuo100.com/img/jiantouleft.png" />
+                        <a id="pwd_msg">密码至少8位,并且包括数字/字母/符号中的两种</a>
+                        <input type="hidden" value="" id="checkIsIndexPwd" />
+                    </div>
+                </div>
+                <div class="index_input">
+                    <input type="password" alt="请再次输入密码" placeholder="请再次输入密码" maxlength="20" onblur="CheckRepwd(this.value);" id="repwd" />
+                    <img src="http://img9.tongzhuo100.com/img/index_right.png" class="index_tixing" id="index_tixing3" />
+                    <div class="index_input_tx" id="repwd_info">
+                        <img src="http://img9.tongzhuo100.com/img/jiantouleft.png" />
+                        <a>确认密码要跟密码保持一致</a>
+                        <input type="hidden" value="" id="checkIsIndexRetPwd" />
+                    </div>
+
+                </div>
+                <div class="index_inputnone">
+                    <input type="text" alt="请输入验证码" onblur="CheckIndexCode(this.value)" placeholder="请输入验证码" maxlength="6" id="Yanzheng" />
+                    <img style="right:105px" src="http://img9.tongzhuo100.com/img/index_right.png" class="index_tixing" id="index_tixing4" />
+                    <input type="button" value="发送验证码" onclick="GetCode()" id="Syz" />
+                    <div class="index_input_tx" id="code_info">
+                        <img src="http://img9.tongzhuo100.com/img/jiantouleft.png" />
+                        <a>验证码有误,请重新输入</a>
+                        <input type="hidden" value="" id="checkIsIndexCode" />
+                    </div>
+                </div>
+
+                <img src="http://img9.tongzhuo100.com/img/gou.png" type="checkbox" class="Tiaokuan" id="Tiaokuan" /><span>已阅读并同意&lt;<a>同桌100服务条款</a>&gt;</span>
+                <input type="button" value="注册" onclick="CheckRegForm();" class="regbttn" />
+                <input type="hidden" value="" id="indexformflag" name="indexformflag" />
+            </form>
+            <div id="singleP" class="singleP">
+                <div class="singlePT">
+                    <div class="Shead">
+                        <img src="http://img9.tongzhuo100.com/img/bottom1.png" id="info_sphoto" />
+                    </div>
+                </div>
+                <div class="singlePTR">
+                    <p>欢迎</p>
+                    <p id="info_nickname">TONGZHUO4654454545</p>
+                    <p class="singlePTR2">
+                        同币<span id="info_coin">0</span>个
+                        <a target="_blank" href="http://www.tongzhuo100.com/alliance/sign.php">提现</a>
+                    </p>
+                    <p class="singlePTR2">
+                        我的积分：<span id="info_totals">1500</span>
+                    </p>
+                </div>
+                <div class="singlePTL">
+                    学习卡使用剩余：<span id="info_card_end_time">365</span>天
+                </div>
+                <a id="info_last_video_title_id" href="#">
+                    <p class="single_near">最近浏览：<span id="info_last_view_time">2016-01-12  16:22</span></p>
+                    <p id="info_last_view_title" class="single_near2">小学-语文-六年级-《从百草堂》</p>
+                </a>
+                <div class="helpcenter single_B">
+                    <a target="_blank" href="http://www.tongzhuo100.com/study_report/video_report.php">查看学习记录</a>
+                    <a target="_blank" href="http://www.tongzhuo100.com/space/">我的资料</a>
+                </div>
+                <div class="helpcenter">
+                    <a class="jihuo">激活学习卡</a>
+                    <a target="_blank" href="http://www.tongzhuo100.com/help/">帮助中心</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--中间主要内容-->
+<!--新闻中心-->
+<div class="Main_top">
+    <p class="main_top_img clearfix">
+        <a href="http://www.tongzhuo100.com/online/index.php" class="main_top_img_s">
+            <img src="http://img9.tongzhuo100.com/img/index_buy.png" />
+        </a>
+        <a href="http://www.tongzhuo100.com/space/activation_card.php" class="main_top_img_first">
+            <img src="http://img9.tongzhuo100.com/img/index_reborn.png" />
+        </a>
+        <a href="http://www.tongzhuo100.com/Jion/">
+            <img src="http://img9.tongzhuo100.com/img/index_join.png" />
+        </a>
+        <a href="http://www.tongzhuo100.com/menu/introduce.php">
+            <img src="http://img9.tongzhuo100.com/img/index_faq.png" />
+        </a>
+        <a class="give" href="http://www.tongzhuo100.com/Jion/brief.html">
+            <img style="width:175px;" src="http://img9.tongzhuo100.com/img/index_give.jpg" />
+        </a>
+    </p>
+</div>
+<div class="Main_content">
+    <!--中间主体-->
+    <div class="Main_middle">
+        <!--中间左上-->
+        <div class="Main_middle_left">
+            <!-- <div class="M_m_l_t">
+                 <div>同桌100学习网中国公开课</div>
+             </div>-->
+            <div class="M_m_l_v">
+               <div id="a1"><object align="middle" width="475" height="300" name="ckplayer_a1" id="ckplayer_a1" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=11,3,0,0" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" pluginspage="http://www.macromedia.com/go/getflashplayer"><param value="always" name="allowScriptAccess" /><param value="true" name="allowFullScreen" /><param value="high" name="quality" /><param value="#FFF" name="bgcolor" /><param value="transparent" name="wmode" /><param value="ckplayer/ckplayer.swf" name="movie" /><param value="f=http://www.tongzhuo100.com/ckplayer/index_video.xml&amp;s=2&amp;c=0&amp;p=0&amp;h=3" name="flashvars" /><embed align="middle" width="475" height="300" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" id="ckplayer_a1" name="ckplayer_a1" flashvars="f=http://www.tongzhuo100.com/ckplayer/index_video.xml&amp;s=2&amp;c=0&amp;p=0&amp;h=3" src="ckplayer/ckplayer.swf" wmode="transparent" bgcolor="#FFF" quality="high" allowfullscreen="true" allowscriptaccess="always" /></object></div>
+               <script type="text/javascript">
+				function getCookie(name){
+						var strcookie=document.cookie;
+						var arrcookie=strcookie.split("; ");
+						for(var i=0;i&lt;arrcookie.length;i++){
+							var arr=arrcookie[i].split("=");
+							if(arr[0]==name){
+								return unescape(arr[1]);
+							}
+						}
+						return "";
+					}
+					var flashvars={
+						f:'ckplayer/index_video.xml',
+						s:2,
+						c:0,
+						p:1,
+						h:3
+					};
+					if(getCookie("user_name_title") != "" &amp;&amp; getCookie("user_name_title") != null  &amp;&amp; getCookie("user_name_title") != "undefined" ){
+					flashvars.p = 0;
+					}
+					var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always',wmode:'transparent'};
+					CKobject.embedSWF('ckplayer/ckplayer.swf','a1','ckplayer_a1','475','300',flashvars,params);
+				</script>
+            </div>
+
+            <div class="M_m_l_t">
+                <div class="M_m_l_t_d border_bottom w_color">按版本分类学习</div>
+                <b>|</b>
+                <div class="M_m_l_t_d w_color">按内容分类学习</div>
+                <!--<a class="M_m_l_t_span" style="display:none">按教材分类</a> -->
+                <a href="http://www.tongzhuo100.com/version/" class="M_m_l_t_more">更多</a>
+            </div>
+            <div class="M_m_l_m clearfix">
+                <div class="version">
+                    <h2><a href="http://www.tongzhuo100.com/version/1.html">人教版</a></h2>
+                    <ul>
+                        <li><a href="http://www.tongzhuo100.com/primary/v1/1/">一年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v1/2/">二年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v1/3/">三年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v1/4/">四年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v1/5/">五年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v1/6/">六年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v1/7/">七年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v1/8/">八年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v1/9/">九年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v1/10/">高一</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v1/11/">高二</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v1/12/">高三</a></li>
+                    </ul>
+                </div>
+                <div class="version">
+                    <h2><a href="http://www.tongzhuo100.com/version/2.html">苏教版</a></h2>
+                    <ul>
+                        <li><a href="http://www.tongzhuo100.com/primary/v2/1/">一年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v2/2/">二年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v2/3/">三年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v2/4/">四年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v2/5/">五年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v2/6/">六年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v2/7/">七年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v2/8/">八年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v2/9/">九年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v2/10/">高一</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v2/11/">高二</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v2/12/">高三</a></li>
+                    </ul>
+                </div>
+                <div class="version">
+                    <h2><a href="http://www.tongzhuo100.com/version/8.html">北师大</a></h2>
+                    <ul>
+                        <li><a href="http://www.tongzhuo100.com/primary/v8/1/">一年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v8/2/">二年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v8/3/">三年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v8/4/">四年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v8/5/">五年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v8/6/">六年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v8/7/">七年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v8/8/">八年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v8/9/">九年级</a></li>
+                        <!--<li><a href="#">高一</a></li>-->
+                        <!--<li><a href="#">高二</a></li>-->
+                        <!--<li><a href="#">高三</a></li>-->
+                    </ul>
+                </div>
+                <div class="version">
+                    <h2><a href="http://www.tongzhuo100.com/version/7.html">鲁教版</a></h2>
+                    <ul>
+                        <li><a href="http://www.tongzhuo100.com/primary/v7/1/">一年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v7/2/">二年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v7/3/">三年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v7/4/">四年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v7/5/">五年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v7/7/">六年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v7/8/">七年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v7/9/">八年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v7/13/">九年级</a></li>
+                        <!--<li><a href="#">高一</a></li>-->
+                        <!--<li><a href="#">高二</a></li>-->
+                        <!--<li><a href="#">高三</a></li>-->
+                    </ul>
+                </div>
+                <div class="version">
+                    <h2><a href="http://www.tongzhuo100.com/version/34.html">青岛版</a></h2>
+                    <ul>
+                        <li><a href="http://www.tongzhuo100.com/primary/v34/1/">一年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v34/2/">二年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v34/3/">三年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v34/4/">四年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v34/5/">五年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v34/6/">六年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v34/7/">七年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v34/8/">八年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v34/9/">九年级</a></li>
+                        <!--<li><a href="#">高一</a></li>-->
+                        <!--<li><a href="#">高二</a></li>-->
+                        <!--<li><a href="#">高三</a></li>-->
+                    </ul>
+                </div>
+                <div class="version">
+                    <h2><a href="http://www.tongzhuo100.com/version/11.html">浙教版</a></h2>
+                    <ul>
+                        <li><a href="http://www.tongzhuo100.com/primary/v11/1/">一年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v11/2/">二年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v11/3/">三年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v11/4/">四年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v11/5/">五年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v11/6/">六年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v11/7/">七年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v11/8/">八年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v11/9/">九年级</a></li>
+                        <!--<li><a href="#">高一</a></li>-->
+                        <!--<li><a href="#">高二</a></li>-->
+                        <!--<li><a href="#">高三</a></li>-->
+                    </ul>
+                </div>
+                <div class="version">
+                    <h2><a href="http://www.tongzhuo100.com/version/19.html">语文S版</a></h2>
+                    <ul>
+                        <li><a href="http://www.tongzhuo100.com/primary/v19/1/">一年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v19/2/">二年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v19/3/">三年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v19/4/">四年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v19/5/">五年级</a></li>
+                        <li><a href="http://www.tongzhuo100.com/primary/v19/6/">六年级</a></li>
+                        <!--<li><a href="#">七年级</a></li>-->
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="version versionOne">
+                    <h2><a href="http://www.tongzhuo100.com/english/index.shtml">英语同步课程</a></h2>
+                    <ul>
+                        <li style=" width:57px" class="special_width1"><a href="http://www.tongzhuo100.com/english/v1/3/">人教版PEP</a></li>
+                        <li style=" width:86px" class="special_width1"><a href="http://www.tongzhuo100.com/english/v1/30/">人教精通版英语</a></li>
+                        <li style=" width:50px; margin-left:3px" class="special_width1"><a href="http://www.tongzhuo100.com/english/v13/32/">冀教英语</a></li>
+                        <li class="special_width1"><a href="http://www.tongzhuo100.com/english/v1/13/">人教新起点</a></li>
+                        <li class="special_width5"><a href="http://www.tongzhuo100.com/english/v8/14/">北师大1-12年级</a></li>
+                        <li class="special_width4"><a href="http://www.tongzhuo100.com/english/v8/19/">北师大3-12年级</a></li>
+                        <li class="special_width5"><a href="http://www.tongzhuo100.com/english/v16/15/">外研社1-12年级</a></li>
+                        <li style="width:88px" class="special_width1"><a href="http://www.tongzhuo100.com/english/v16/16/">外研社3-12年级</a></li>
+                        <li style=" text-align:center" class="special_width1"><a href="http://www.tongzhuo100.com/english/v7/23/">鲁教英语</a></li>
+                        <li class="special_width3"><a href="http://www.tongzhuo100.com/english/v32/22/">仁爱英语</a></li>
+                        <li class="special_width1"><a href="http://www.tongzhuo100.com/english/v2/17/">牛津译林版</a></li>
+                        <li style="margin:0 3px" class="special_width1"><a href="http://www.tongzhuo100.com/english/v10/27/">广州版英语</a></li>
+                        <li class="special_width1"><a href="http://www.tongzhuo100.com/english/v33/31/">牛津上海版</a></li>
+                        <li class="special_width4"><a href="http://www.tongzhuo100.com/english/v12/33/">湘少版英语</a></li>
+                    </ul>
+                </div>
+            </div>
+                <!--<div id="video_navigation" class="M_m_l_m">-->
+                <!--<a href="video_show/video_select.shtml#course_1" >-->
+                    <!--<img src="http://img9.tongzhuo100.com/img/icon1.png">-->
+                    <!--<p>人教版</p>-->
+                <!--</a>-->
+                <!--<a href="video_show/video_select.shtml#course_2" >-->
+                    <!--<img src="http://img9.tongzhuo100.com/img/icon2.png">-->
+                    <!--<p>苏教版</p>-->
+                <!--</a>-->
+                <!--<a class="M_m_l_mS" href="video_show/topics_select.shtml#english" >-->
+                    <!--<img src="http://img9.tongzhuo100.com/img/englisgh.png">-->
+                    <!--<span>英语专区</span>-->
+                <!--</a>-->
+                <!--<a href="video_show/video_select.shtml#course_8" >-->
+                    <!--<img src="http://img9.tongzhuo100.com/img/icon5.png">-->
+                    <!--<p>北师大版</p>-->
+                <!--</a>-->
+                <!--<a href="video_show/video_select.shtml#course_16" >-->
+                    <!--<img src="http://img9.tongzhuo100.com/img/icon7.png">-->
+                    <!--<p>外研社</p>-->
+                <!--</a>-->
+                <!--<a href="video_show/video_select.shtml#course_7" >-->
+                    <!--<img src="http://img9.tongzhuo100.com/img/icon3.png">-->
+                    <!--<p>鲁教版</p>-->
+                <!--</a>-->
+                <!--<a class="M_m_l_mS2" href="video_show/video_select.shtml#course_15" >-->
+                    <!--<img src="http://img9.tongzhuo100.com/img/icon4.png">-->
+                    <!--<p>西师大版</p>-->
+                <!--</a>-->
+                <!--<a href="video_show/video_select.shtml#course_17" >-->
+                    <!--<img src="http://img9.tongzhuo100.com/img/icons1.png">-->
+                    <!--<p>华师大版</p>-->
+                <!--</a>-->
+                <!--<a href="video_show/video_select.shtml#course_18" >-->
+                    <!--<img src="http://img9.tongzhuo100.com/img/icons.png">-->
+                    <!--<p>沪科版</p>-->
+                <!--</a>-->
+                <!--<a href="video_show/video_select.shtml#course_11" >-->
+                    <!--<img src="http://img9.tongzhuo100.com/img/icon9.png">-->
+                    <!--<p>浙教版</p>-->
+                <!--</a>-->
+                <!--<a class="M_m_l_mS2" href="video_show/video_select.shtml#course_19" >-->
+                    <!--<img src="http://img9.tongzhuo100.com/img/icon8.png">-->
+                    <!--<p>语文s版</p>-->
+                <!--</a>-->
+                <!--<a href="video_show/video_select.shtml#course_13" >-->
+                    <!--<img src="http://img9.tongzhuo100.com/img/icon10.png">-->
+                    <!--<p>冀教版</p>-->
+                <!--</a>-->
+                <!--<a href="video_show/video_select.shtml#course_30" >-->
+                    <!--<img src="http://img9.tongzhuo100.com/img/icons2.png">-->
+                    <!--<p>沪教版</p>-->
+                <!--</a>-->
+                <!--<a href="video_show/video_select.shtml#course_34" >-->
+                    <!--<img src="http://img9.tongzhuo100.com/img/icon11.png">-->
+                    <!--<p>青岛版</p>-->
+                <!--</a>-->
+                <!--<a class="M_m_l_mS22" href="video_show/video_select.shtml#course_31" >-->
+                    <!--<img src="http://img9.tongzhuo100.com/img/icon12.png">-->
+                    <!--<p>教科版</p>-->
+                <!--</a>-->
+                <!--<div style="clear:both"></div>-->
+            <!--</div>-->
+                <div class="M_m_l_m" id="video_zone">
+                    <a class="border_b" href="http://www.tongzhuo100.com/topics/recite.shtml">
+                        <!--<div>-->
+                            <img src="http://img9.tongzhuo100.com/img/video_zone1.png" />
+                        <!--</div>-->
+                        <p>朗诵</p>
+                    </a>
+                    <a class="special_width border_lr border_b" href="http://www.tongzhuo100.com/topics/calligraphy.shtml">
+                        <!--<div>-->
+                            <img src="http://img9.tongzhuo100.com/img/video_zone2.png" />
+                        <!--</div>-->
+                        <p>书法</p>
+                    </a>
+                    <a class="border_b" href="http://www.tongzhuo100.com/topics/math.shtml">
+                        <!--<div>-->
+                            <img src="http://img9.tongzhuo100.com/img/video_zone3.png" />
+                        <!--</div>-->
+                        <p>奥数</p>
+                    </a>
+                    <a class="border_b" href="http://www.tongzhuo100.com/topics/writex.shtml">
+                        <!--<div>-->
+                            <img src="http://img9.tongzhuo100.com/img/video_zone4.png" />
+                        <!--</div>-->
+                        <p>作文辅导</p>
+                    </a>
+                    <a class="special_width border_lr border_b" href="http://www.tongzhuo100.com/topics/symbol.shtml">
+                        <!--<div>-->
+                            <img src="http://img9.tongzhuo100.com/img/video_zone5.png" />
+                        <!--</div>-->
+                        <p>音标</p>
+                    </a>
+                    <a class="border_b" href="http://www.tongzhuo100.com/video_show/video_select.shtml#%E5%BA%94%E7%94%A8%E9%A2%98">
+                        <!--<div>-->
+                            <img src="http://img9.tongzhuo100.com/img/video_zone6.png" />
+                        <!--</div>-->
+                        <p>应用题辅导</p>
+                    </a>
+                    <a href="http://www.tongzhuo100.com/topics/ancient.shtml">
+                        <!--<div>-->
+                            <img src="http://img9.tongzhuo100.com/img/video_zone7.png" />
+                        <!--</div>-->
+                        <p>国学</p>
+                    </a>
+                    <a class="special_width border_lr" href="http://www.tongzhuo100.com/topics/family.shtml">
+                        <!--<div>-->
+                            <img src="http://img9.tongzhuo100.com/img/video_zone8.png" />
+                        <!--</div>-->
+                        <p>家庭教育</p>
+                    </a>
+                    <a href="http://www.tongzhuo100.com/topics/safe.shtml">
+                        <!--<div>-->
+                            <img src="http://img9.tongzhuo100.com/img/video_zone9.png" />
+                        <!--</div>-->
+                        <p>安全教育</p>
+                    </a>
+                </div>
+            <!--<div class="M_m_l_t">
+                <div class="M_m_l_t_d mar10">综合复习课程导航</div>
+            </div>
+            <div class="M_m_l_b">
+                <a href="video_show/topics_select.shtml#review" >
+                    <img src="http://img9.tongzhuo100.com/img/one.png"><span>综合复习</span>
+                </a>
+                <a class="M_m_l_bS" href="http://www.tongzhuo100.com/examination/" >
+                    <img src="http://img9.tongzhuo100.com/img/two.png">
+                    <span>模拟考试</span>
+                </a>-->
+                
+            </div>
+        </div>
+        <!--中间右上-->
+        <div class="Main_middle_right">
+            <div class="M_m_r_t">
+                <div class="M_m_r_t1 mmrton">
+                    <a>同步课程上册免费体验</a>
+                </div>
+                <div class="M_m_r_t2">
+                    <a>同步课程下册免费体验</a>
+                </div>
+                <a href="video_show/video_select.shtml" class="M_m_l_t_more">更多</a>
+            </div>
+            <div class="M_m_r_M" id="shangce">
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2016-05/41839.html">
+                        <img src="http://img10.tongzhuo100.com/images/imagesxybaz.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>怎样快速提高孩子的学习成绩？</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2016-04/36399.html">
+                        <img src="http://img10.tongzhuo100.com/images/wfxzuowen.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>如何写好作文</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2016-07/42777.html">
+                        <img src="http://image.tongzhuo100.com/video/145131ddd36ef7c42baed3bdec9b4de0.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>三年级语文上册第18课《盘古开天地》</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2016-05/36666.html">
+                        <img src="http://image.tongzhuo100.com/video/1df0e099b38c71d546acda5ac5b3473e.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>《硬笔楷书基本笔画的写法》第二节</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30570.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/3.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>二年级语文上册第30课《我是什么》</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30572.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/5.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>三年级语文上册第24课《香港，璀璨的明珠》</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30574.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/7.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>三年级英语上册Unit 2《Colours》(2)</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30576.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/9.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>四年级语文上册第1课《观潮》(上)</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30578.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/11.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>四年级英语上册Unit 1《My classroom》(1)</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30580.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/13.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>五年级语文上册第1课《窃读记》(上)</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30582.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/15.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>五年级英语上册Unit 1《What's he like?》</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30585.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/18.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>六年级英语上册Unit 1《How can I get there?》</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30583.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/16.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>六年级语文上册第1课《山中访友》(1)</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30586.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/19.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>七年级语文上册第24课《诗两首-金色花》</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30587.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/20.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>七年级数学上册第一章《有理数》正数与负数</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30589.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/22.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>七年级英语上册Starter Unit 1《Good morning》</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30591.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/24.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>七年级历史上册第11课《伐无道，诛暴秦》</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30594.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/27.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>八年级语文上册第13课《苏州园林》</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30599.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/32.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>八年级物理上册《机械运动》第2节运动的描述</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30604.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/37.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>九年级语文上册第10课《孤独之旅》(1)</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="M_m_r_M" id="xiace">
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30569.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/2.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>一年级语文下册第6课《胖乎乎的小手》</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30571.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/4.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>二年级语文下册第2课《古诗两首—草》</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30573.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/6.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>三年级语文下册第17课《可贵的沉默》</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30575.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/8.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>三年级Unit 1《Welcome back to school》</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30577.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/10.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>四年级语文下册第18课《永生的眼睛》</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30579.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/12.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>四年级英语下册Unit 1《My school》(1)</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30581.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/14.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>五年级语文下册第1课《草原》</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30584.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/17.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>六年级语文下册第1课《文言文两则-学弈》</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30588.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/21.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>七年级数学下册第五章5.1.1《相交线》</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30590.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/23.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>七年级英语Unit 1《Can you play the guitar?》</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30592.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/25.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>七年级历史下册第3课《开元盛世》</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30595.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/28.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>八年级语文下册第23课《马说》(上)</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30596.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/29.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>八年级数学下册第18章平行四边形的性质(1)</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30600.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/33.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>八年级物理下册第七章《力》第2节 弹力</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30605.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/38.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>九年级语文下册第1课《诗两首-我爱这土地》</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30607.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/40.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>九年级数学下册第27章《相似》图形的相似</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30611.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/44.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>高中语文第8课《小狗包弟》(必修1)</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30615.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/48.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>高中数学第一章1.1《算法的概念》(必修3)</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30620.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/53.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>高中英语Unit 1《Cultural relics》</p>
+                    </a>
+                </div>
+                <div class="M_m_r_MY">
+                    <a href="http://g15.tongzhuo100.com/v/2015-03/30625.html">
+                        <img src="http://img10.tongzhuo100.com/2015index/img/58.jpg" />
+                        <span class="hover"></span>
+                        <i class="hover1"></i>
+                        <p>高中物理第五章第1课《曲线运动》(必修2)</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="clear:both"></div>
+
+<script>
+    $(".M_m_r_MY").hover(function(){
+        $(this).find(".hover,.hover1").show();
+    },function(){
+        $(this).find(".hover,.hover1").hide();
+    });
+</script>
+<div class="comprehensive">
+	 <div class="comprehensiveCon">
+     	<p><span>综合复习课程导航</span></p>
+        <a href="http://www.tongzhuo100.com/unit_review/">
+            <img class="scale" src="http://img9.tongzhuo100.com/img/20169231.jpg" /><br />
+            单元复习
+        </a>
+        <a href="http://www.tongzhuo100.com/unit_review/">
+            <img class="scale" src="http://img9.tongzhuo100.com/img/20169232.jpg" /><br />
+            期中复习
+        </a>
+        <a href="http://www.tongzhuo100.com/unit_review/">
+            <img class="scale" src="http://img9.tongzhuo100.com/img/20169233.jpg" /><br />
+            期末复习
+        </a>
+        <a href="http://www.tongzhuo100.com/examination/">
+            <img class="scale" src="http://img9.tongzhuo100.com/img/20169234.jpg" /><br />
+            模拟考试
+        </a>
+        <a href="http://ask.tongzhuo100.com/">
+            <img class="scale" src="http://img9.tongzhuo100.com/img/20169235.jpg" /><br />
+            作业辅导
+        </a>
+     </div>
+</div>
+<!-- 新闻公告 -->
+<!--<div class="Main_top_z">
+    <a class="lf" href="http://www.tongzhuo100.com/affiche/news1.shtml">新闻公告</a>
+    <div class="lf" id="news">
+        <div id="newsinindex">
+        </div>
+    </div>
+    <div class="iconyq">
+        <a class="Inyq_up"><img src="http://img9.tongzhuo100.com/img/upiconyq.png" alt=""></a>
+        <a class="Inyq_dw"><img src="http://img9.tongzhuo100.com/img/dwniconyq.png" alt=""></a>
+    </div>
+    <div class="cls"></div>
+</div>-->
+<!--中间下方-->
+<div class="Main_bottom">
+    <div class="Main_bottom_B">
+        <div class="M_m_l_t">
+            <div class="M_m_l_t_d Main_bottom_t">视频专题区</div>
+            <a href="topics/index.shtml" class="M_m_l_t_more">更多</a>
+        </div>
+        <div class="Main_bottom_B_B Indexfirest">
+            <a class="large" href="http://www.tongzhuo100.com/topics/calligraphy.shtml">
+                <img class="large_img" src="http://img9.tongzhuo100.com/img/bottom1.png" />
+                <!--<p>进度：12/30节</p>-->
+            </a>
+            <p>书法</p>
+        </div>
+        <div class="Main_bottom_B_B">
+            <a class="large" href="http://www.tongzhuo100.com/topics/writex.shtml">
+                <img class="large_img" src="http://img9.tongzhuo100.com/img/bottom4.png" />
+                <!--<p>进度：12/30节</p>-->
+            </a>
+            <p>小学作文</p>
+        </div>
+        <div class="Main_bottom_B_B">
+            <a class="large" href="http://www.tongzhuo100.com/topics/recite.shtml">
+                <img class="large_img" src="http://img9.tongzhuo100.com/img/recite.png" />
+                <!--<p>进度：12/30节</p>-->
+            </a>
+            <p>朗诵</p>
+        </div>
+        <div class="Main_bottom_B_B">
+            <a class="large" href="http://www.tongzhuo100.com/topics/family.shtml">
+                <img class="large_img" src="http://img9.tongzhuo100.com/img/bottom6.png" />
+                <!--<p>进度：12/30节</p>-->
+            </a>
+            <p>家庭教育</p>
+        </div>
+        <div class="Main_bottom_B_B">
+            <a class="large" href="http://www.tongzhuo100.com/topics/safe.shtml">
+                <img class="large_img" src="http://img9.tongzhuo100.com/img/bottom3.png" />
+                <!--<p>进度：12/30节</p>-->
+            </a>
+            <p>安全教育</p>
+        </div>
+        <div class="Main_bottom_B_B">
+            <a class="large" href="http://www.tongzhuo100.com/topics/toefl.shtml">
+                <img class="large_img" src="http://img9.tongzhuo100.com/img/toefl_03.png" />
+                <!--<p>进度：12/30节</p>-->
+            </a>
+            <p>托福雅思</p>
+        </div>
+    </div>
+</div>
+<div class="notice">
+	<div id="fill_news" class="noticeCon">
+        <ul class="new">
+            <p><img src="http://img9.tongzhuo100.com/img/20169236.png" /><span>教育新闻</span><a class="more" href="http://www.tongzhuo100.com/affiche/news1.shtml">更多</a></p>
+            <!--<li><a href="#">[活动]同桌100一年卡团购优惠活动进行中！</a></li>-->
+            <!--<li><a href="#">[活动]同桌100一年卡团购优惠活动进行中！</a></li>-->
+            <!--<li><a href="#">[活动]同桌100一年卡团购优惠活动进行中！</a></li>-->
+            <!--<li><a href="#">[活动]同桌100一年卡团购优惠活动进行中！</a></li>-->
+        <li><a href="http://www.tongzhuo100.com/affiche/news.html?id=806" style="display: block; width: 350px; height:30px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">[新闻]没完成作业 四川7名学生被罚轮流下跪抽耳光</a></li><li><a href="http://www.tongzhuo100.com/affiche/news.html?id=803" style="display: block; width: 350px; height:30px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">[新闻]广西建档立卡贫困户子女享15年免费教育</a></li><li><a href="http://www.tongzhuo100.com/affiche/news.html?id=802" style="display: block; width: 350px; height:30px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">[新闻]英国为何实施“上海数学教学法”？</a></li><li><a href="http://www.tongzhuo100.com/affiche/news.html?id=800" style="display: block; width: 350px; height:30px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">[新闻]猥亵多名女学生 27岁男教师一审获刑10年</a></li></ul>
+        <ul class="web">
+        	<p><img src="http://img9.tongzhuo100.com/img/20169238.png" /><span>网站公告</span><a class="more" href="http://www.tongzhuo100.com/affiche/news1.shtml">更多</a></p>
+        	<!--<li><a href="#">[活动]同桌100一年卡团购优惠活动进行中！</a></li>-->
+            <!--<li><a href="#">[活动]同桌100一年卡团购优惠活动进行中！</a></li>-->
+            <!--<li><a href="#">[活动]同桌100一年卡团购优惠活动进行中！</a></li>-->
+            <!--<li><a href="#">[活动]同桌100一年卡团购优惠活动进行中！</a></li>-->
+        <li><a href="http://www.tongzhuo100.com/affiche/news.html?id=794" style="display: block; width: 350px; height:30px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">[公告]同桌100高薪诚聘全国特级教师</a></li><li><a href="http://www.tongzhuo100.com/affiche/news.html?id=778" style="display: block; width: 350px; height:30px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">[公告]关于近期有不法分子向家长出售假冒伪劣产品的通知</a></li><li><a href="http://www.tongzhuo100.com/affiche/news.html?id=777" style="display: block; width: 350px; height:30px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">[公告]同桌100，全新起航，前行的路上有你更精彩！</a></li><li><a href="http://www.tongzhuo100.com/affiche/news.html?id=776" style="display: block; width: 350px; height:30px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">[公告]炎炎盛夏，莘莘学子，学习卡团购优惠活动进行中！</a></li></ul>
+        <ul class="help">
+        	<p><img src="http://img9.tongzhuo100.com/img/20169237.png" /><span style="margin-top:2px">家教帮助</span><a class="more" href="http://www.tongzhuo100.com/affiche/news1.shtml">更多</a></p>
+        	<!--<li><a href="#">[活动]同桌100一年卡团购优惠活动进行中！</a></li>-->
+            <!--<li><a href="#">[活动]同桌100一年卡团购优惠活动进行中！</a></li>-->
+            <!--<li><a href="#">[活动]同桌100一年卡团购优惠活动进行中！</a></li>-->
+            <!--<li><a href="#">[活动]同桌100一年卡团购优惠活动进行中！</a></li>-->
+        <li><a href="http://www.tongzhuo100.com/affiche/news.html?id=805" style="display: block; width: 350px; height:30px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">[资讯]请严肃地告诉孩子：学习肯定是辛苦的！全世界都一样！</a></li><li><a href="http://www.tongzhuo100.com/affiche/news.html?id=804" style="display: block; width: 350px; height:30px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">[资讯]这5件事，做1件就足以毁掉孩子！看看你做过没？</a></li><li><a href="http://www.tongzhuo100.com/affiche/news.html?id=801" style="display: block; width: 350px; height:30px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">[资讯]温州塌楼父母以身护女：越是感动，越要反思</a></li><li><a href="http://www.tongzhuo100.com/affiche/news.html?id=799" style="display: block; width: 350px; height:30px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">[资讯]小学生打假球不能怪孩子 该脸红的是足球管理者</a></li></ul>
+    </div>
+</div>
+<!--下部分VIP-->
+<div class="VIP">
+    <div class="VIP_main">
+        <div class="VIP_main1">
+            <h1>VIP服务</h1>
+            <p>加入VIP，让孩子随时随地与重点中小学老师面对面学习，将海量资源掌控在手。</p>
+            <a target="_blank" href="online/index.php"><img src="http://img9.tongzhuo100.com/img/vip.png" /></a>
+        </div>
+        <div class="VIP_main2">
+            <div>
+                <a href="http://www.tongzhuo100.com/video_show/video_select.shtml">
+                    <img src="http://img9.tongzhuo100.com/img/qiu_1.png" />
+                </a>
+                <p class="VIP_p1">一次付费</p>
+                <p class="VIP_p2">可以反复学习</p>
+                <span></span>
+            </div>
+            <div>
+                <a href="http://www.tongzhuo100.com/space/ask.php">
+                    <img src="http://img9.tongzhuo100.com/img/qiu2.png" />
+                </a>
+                <p class="VIP_p1">专业教师</p>
+                <p class="VIP_p2">课后辅导</p>
+                <span></span>
+            </div>
+            <div>
+                <a href="http://www.tongzhuo100.com/video_show/video_select.shtml">
+                    <img src="http://img9.tongzhuo100.com/img/qiu3.png" />
+                </a>
+                <p class="VIP_p1">版本无限制</p>
+                <p class="VIP_p2">教材版本应有尽有</p>
+                <span></span>
+
+            </div>
+            <div>
+                <a href="http://www.tongzhuo100.com/video_show/video_select.shtml">
+                    <img src="http://img9.tongzhuo100.com/img/qiu4.png" />
+                </a>
+                <p class="VIP_p1">7X24小时</p>
+                <p class="VIP_p2">视频回放</p>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--下部分7*24-->
+<div class="Class">
+    <div class="Class_main">
+        <div class="Class_main1 VIP_main1">
+            <h1>7×24小时视频课堂</h1>
+            <p>同桌100学习网：<br />课前预习、课后巩固、作业辅导、模拟考试、对应知识点视频讲解。</p>
+            <p>同桌100学习网，为您独家呈现。</p>
+        </div>
+        <a href="http://www.tongzhuo100.com/video_show/video_select.shtml">
+            <img src="http://img9.tongzhuo100.com/img/computer.png" class="Class_main_computer" />
+        </a>
+    </div>
+</div>
+<!--友情链接-->
+<div class="Friends">
+    <div class="M_m_l_t">
+        <div class="M_m_l_t_d Main_bottom_h">友情链接</div>
+        <!--<a class="M_m_l_t_more" href="http://link.tongzhuo100.com/">更多</a>-->
+    </div>
+    <div class="Friends_link">
+        <a target="_blank" href="http://fujian.tongzhuo100.com/">福建同桌100</a>
+        <a target="_blank" href="http://shandong.tongzhuo100.com/">山东同桌100</a>
+        <a target="_blank" href="http://zhejiang.tongzhuo100.com/">浙江同桌100</a>
+        <a target="_blank" href="http://jiangsu.tongzhuo100.com/">江苏同桌100</a>
+        <a target="_blank" href="http://guangdong.tongzhuo100.com/">广东同桌100</a>
+        <a target="_blank" href="http://shanghai.tongzhuo100.com/">上海同桌100</a>
+        <a target="_blank" href="http://beijing.tongzhuo100.com/">北京同桌100</a>
+        <a target="_blank" href="http://chongqing.tongzhuo100.com/">重庆同桌100</a>
+        <a target="_blank" href="http://hubei.tongzhuo100.com/">湖北同桌100</a>
+        <a target="_blank" href="http://jiangxi.tongzhuo100.com/">江西同桌100</a>
+        <a target="_blank" href="http://community.tongzhuo100.com/">外研社同桌100</a>
+        <a target="_blank" href="http://bnu.tongzhuo100.com/">北师大同桌100</a>
+        <a target="_blank" href="http://pep.tongzhuo100.com/">人教PEP同桌100</a>
+        <a target="_blank" href="http://uoo.tongzhuo100.com/">牛津同桌100</a>
+        <a target="_blank" href="http://idn.tongzhuo100.com/">成语大全</a>
+        <a target="_blank" href="http://pe.tongzhuo100.com/">幼儿教育</a>
+        <a target="_blank" href="http://www.cctv.com/">央视网</a>
+        <a target="_blank" href="http://www.moe.gov.cn/">中国教育部</a>
+        <a target="_blank" href="http://www.cse.edu.cn/">中国教育学会</a>
+        <a target="_blank" href="http://eng22.tongzhuo100.com/">仁爱版英语</a>
+        <a target="_blank" href="http://www.chinafew.com/">中国家庭教育委员会</a>
+        <a target="_blank" href="http://m.tongzhuo100.com/">同桌100学习网(手机版)</a>
+        <a target="_blank" href="http://ipad.tongzhuo100.com/">同桌100学习网(ipad版)</a>
+    </div>
+</div>
+<!--底部-->
+<div class="Footer">
+	<div class="Footer_main">
+		<div class="Footer_main_l">
+			<div class="Footer_main_lT">
+				<a>关于我们</a>
+				<a>加入我们</a>
+				<a>帮助中心</a>
+			</div>
+			<div class="Footer_main_lM1">
+				<a href="http://www.tongzhuo100.com/menu/introduce.php">公司简介</a>
+				<a href="http://www.tongzhuo100.com/menu/introduce.php#six">六大优势</a>
+				<a href="http://www.tongzhuo100.com/menu/introduce.php#lecture">教研团队</a>
+				<a href="http://www.tongzhuo100.com/about/aboutus2.shtml">航空快递</a>
+				<a href="http://www.tongzhuo100.com/about/aboutus4.shtml">教研产品</a>
+			</div>
+			<div class="Footer_main_lM1">
+				<a href="http://www.tongzhuo100.com/Jion/">合作加盟</a>
+				<a href="http://www.tongzhuo100.com/about/joinus.shtml">诚聘英才</a>
+				<a href="http://www.tongzhuo100.com/about/contactus.shtml">联系我们</a>
+			</div>
+			<div class="Footer_main_lM1">
+				<a target="_blank" href="http://www.sobot.com/chat/pc/index.html?sysNum=805589e657aa4e9a87d923a02eb17a92"><span>在线客服</span></a>
+				<a href="http://www.tongzhuo100.com/help/"><span>帮助中心</span></a>
+			</div>
+			<div class="Footer_email">
+				<span>联系电话：4006-3456-99  邮箱：tongzhuo100edu@163.com</span>
+			</div>
+		</div>
+		<div class="Footer_main_r">
+			<p>许可证号：</p>
+			<a>网络文化经营许可证京[2016]4110-522号</a>
+			<a>北京市公安局登记证京网安110105006251号</a>
+			<a>同桌100学习网商标许可证第10029078号</a>
+			<a href="http://www.tongzhuo100.com/program_manage/">广播电视节目制作经营许可证京字第01332号</a>
+            <a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action">京ICP备11002308号</a>
+			<a>中华人民共和国网络经营许可证京ICP证100638号</a>
+            
+			<p><span>Copyright © 2016  同桌100  All Rights Reserved  </span>北京博习园教育科技有限公司 </p>
+		</div>
+		<div class="alliance">
+			<a target="_blank" href="http://www.tongzhuo100.com/qualification/"><img src="http://img9.tongzhuo100.com/img/alliance.png" /></a>
+		</div>
+	</div>
+</div>
+<script src="http://img9.tongzhuo100.com/js/normal.js?201607041600" type="text/javascript"></script>
+<script src="http://img9.tongzhuo100.com/js/zzsc.js?201606300900"></script><div class="CategoryAll"><div class="CategoryAllin Categoryhis"><div class="Categorylist"><a id="peoplekefu">人工客服</a><a id="rebortkefu">智能客服</a></div><img src="http://img9.tongzhuo100.com/img/index_right1.png" /><span>在线咨询</span></div><div class="CategoryAllin Categoryhis"><a>4006-3456-99</a><img src="http://img9.tongzhuo100.com/img/index_right2.png" /><span>热线电话</span></div><div class="CategoryAll_3 Categoryhis"><a><img src="http://img9.tongzhuo100.com/img/2weima22.png" /></a><img src="http://img9.tongzhuo100.com/img/index_right3.png" /><span>扫码下载</span></div><div class="CategoryAllin"><a target="_blank" href="http://www.tongzhuo100.com/Comments/feedback/"><img src="http://img9.tongzhuo100.com/img/index_right4.png" /></a><span>建议反馈</span></div><div class="CategoryAllin CategoryAllinback"><a><img src="http://img9.tongzhuo100.com/img/index_right5.png" /></a><span>返回顶部</span></div></div>
+
+<div class="box_dialog" id="box_dialog">
+    <div class="bg"></div>
+    <!--激活学习卡-登录-->
+    <div class="box box_dialog_box" id="box" style="left: 254.5px; top: 19px; position: fixed;">
+        <strong class="close"><img src="http://img9.tongzhuo100.com/img/close.png" /></strong>
+        <div class="title">登录验证</div>
+        <!--<p class="prompt">为确保您的激活准确有效，请确认您的账号和密码。</p>-->
+        <div style="margin-top:20px" class="username-password Mar0">
+            <p class="name">请确认您的登录账号：</p>
+            <input type="text" autofocus="" placeholder="请输入用户名" class="text" id="username" />
+            <p class="namewarn" id="errMsgUsername">你输入的用户名有误</p>
+        </div>
+        <div class="username-password">
+            <p class="name">请输入您的登录密码：</p>
+            <input type="password" placeholder="请输入密码" class="text" id="password" />
+            <p class="passwarn" id="errMsgPassword">你输入的密码有误</p>
+            <input type="button" value="下一步" class="next" id="next_1" />
+        </div>
+        <p class="care"><span class="span_1">注</span>：同桌100学习卡每一张卡只能一位学生或家长在线学习使用。</p>
+    </div>
+    <!--激活学习卡-登录-->
+
+    <!--激活学习卡-输入卡密-->
+    <div class="box1 box_dialog_box" id="box2" style="left: 254.5px; top: 19px; position: fixed;">
+        <strong class="close"><img src="http://img9.tongzhuo100.com/img/close.png" /></strong>
+        <div class="title">输入卡密</div>
+        <p class="prompt">请输入学习卡的卡号和密码，提供手机号码更方便我们为您服务。</p>
+        <div class="username-password Mar15">
+            <p class="name">学习卡号码：</p>
+            <input type="text" autofocus="" placeholder="请输入学习卡号码" class="text" id="learncardNumber" />
+            <p class="namewarn">你输入的用户名有误</p>
+        </div>
+        <div class="username-password">
+            <p class="name">学习卡密码：</p>
+            <input type="password" placeholder="请输入学习卡密码" class="text width150" id="learncardPassword" />
+            <p class="passwarn">你输入的密码有误</p>
+        </div>
+        <div class="username-password">
+            <p class="name">手机号码：</p>
+            <input type="text" placeholder="请输入手机号码" class="text width150" id="learncardPhone" />
+            <p class="phonewarn"></p><br />
+            <input type="button" value="下一步" class="next" id="next_2" />
+            <a href="javascript:;" class="return">返回</a>
+        </div>
+        <p class="care"><span class="span_1">注</span>：同桌100学习卡每一张卡只能一位学生或家长在线学习使用。</p>
+        <input type="hidden" value="" id="learnCardUsername" />
+    </div>
+    <!--激活学习卡-输入卡密-->
+
+    <!--激活成功-->
+    <div id="box3" class="box2 box_dialog_box" style="left: 254.5px; top: 19px; position: fixed;">
+        <strong class="close"><img src="http://img9.tongzhuo100.com/img/close.png" /></strong>
+        <p class="zi1">恭喜您已激活成功！</p>
+        <p class="zi2">5秒后自动关闭</p>
+        <p class="zi3">您现在可以去收费区 <a href="http://www.tongzhuo100.com/video_show/video_select.shtml">选择课程</a> 进行学习啦！</p>
+    </div>
+
+    <!--激活失败-->
+    <div class="box3 box_dialog_box" id="box4" style="left: 254.5px; top: 19px; position: fixed;">
+        <strong class="close"><img src="http://img9.tongzhuo100.com/img/close.png" /></strong>
+        <p class="zi1">您填写的信息有误！</p>
+        <p class="zi4">可能是以下原因：</p>
+        <p class="zi2">① 卡号或卡密不正确，请仔细核对后进行激活。</p>
+        <p class="zi2">② 此卡号已被充值使用。</p>
+        <p class="zi3">帮助热线：<span>4006-3456-99</span></p>
+        <div class="q-r">
+            <a href="javascript:;" class="query">查询</a>
+            <a href="javascript:;" class="return">返回</a>
+        </div>
+    </div>
+    <!--激活失败-->
+
+    <!--卡号查询-->
+    <div class="box4 box_dialog_box" id="box5" style="left: 254.5px; top: 19px; position: fixed;">
+        <strong class="close"><img src="http://img9.tongzhuo100.com/img/close.png" /></strong>
+        <div class="title">卡号查询</div>
+        <div class="username-password Mar14">
+            <p class="name">输入卡号：</p>
+            <input type="text" autofocus="" placeholder="请输入卡号" class="text" id="searchCardNumber" />
+        </div>
+        <div class="q-r1">
+            <a href="javascript:;" class="query" id="query">查询</a>
+            <a href="javascript:;" class="return">返回</a>
+        </div>
+        <div class="line"></div>
+        <div id="result">
+            <p class="result">查询结果</p>
+            <div class="result-ep">
+                <!--查询结果三种状态-->
+                <!--<p class="zi5 result_1">您输入的卡号不存在，请认真核对再重新查询。</p>
+                <p class="zi5 result_2">您输入的卡号在此前已被激活。</p>-->
+                <p class="zi5 result_3" id="activateCardId">卡号：12315649875614631</p>
+                <p class="zi5 result_3" id="activateCardStatus">卡号状态：正常(未激活）</p>
+            </div>
+            <p class="zi6">如有疑问请致电4006-3456-99</p>
+        </div>
+    </div>
+
+
+</div>
+<!--卡号查询-->
+<!--提示-->
+
+<!--提示-->
+<div class="black_box" style="display: none;"></div>
+<div class="b_b_imgbox" style="display: none;">
+    <script>
+        var indexlocalStorage = localStorage.getItem('indexold');
+        if (indexlocalStorage == null) {
+            $(".black_box,.b_b_imgbox").show();
+            var closeticing = setTimeout(function() {
+                $(".black_box,.b_b_imgbox").hide();
+            }, 5000)
+            localStorage.setItem("indexold", "1")
+        } else {
+            $(".black_box,.b_b_imgbox").hide();
+        }
+    </script>
+    <img class="tipsImg" alt="" src="http://img9.tongzhuo100.com/img/tis.png" />
+</div>
+<script src="http://img9.tongzhuo100.com/js/activation.js?2" type="text/javascript"></script>
+<script src="http://img9.tongzhuo100.com/js/newsmarque.js?20160722" type="text/javascript"></script>
+<!--个人信息标签显示信息-->
+ <script src="http://lead.soperson.com/20001791/10063030.js" charset="utf-8" type="text/javascript"></script>
+<script src="http://www.tongzhuo100.com/index/js/login.js?201606300900" type="text/javascript"></script>
+<script>
+    (function () {
+        $(".M_m_r_MY").click(function(){
+            $(".jp-play").trigger("click");
+        });
+//        鼠标悬浮在新闻公告上的效果
+        $('#fill_news ul li a').hover(function(){
+            $(this).css('color','#991f24').parent('li').siblings().children('a').css('color','#333');
+            $(this).css('color','#991f24').parent().parent().siblings().children('li').children('a').css('color','#333');
+        })
+    })();
+</script>
+
+</body></html>

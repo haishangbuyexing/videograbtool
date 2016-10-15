@@ -1,0 +1,27 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DownloadWorker	dowload1.py	/^class DownloadWorker(Thread):$/;"	c
+HTTPError	dowload1.py	/^from urllib.request import HTTPError,URLError$/;"	i
+Queue	dowload1.py	/^from queue import Queue$/;"	i
+Thread	dowload1.py	/^from threading import Thread$/;"	i
+URLError	dowload1.py	/^from urllib.request import HTTPError,URLError$/;"	i
+__init__	dowload1.py	/^    def __init__(self,queue):$/;"	m	class:DownloadWorker
+ctime	dowload1.py	/^from time  import ctime,time,sleep$/;"	i
+down	dowload1.py	/^def down(down_dir,link):$/;"	f
+get_link	dowload1.py	/^def get_link(start,stop):$/;"	f
+main	dowload1.py	/^def main():$/;"	f
+math	dowload1.py	/^import urllib.request,sys,math,os,socket$/;"	i
+os	dowload1.py	/^import urllib.request,sys,math,os,socket$/;"	i
+request	dowload1.py	/^import urllib.request,sys,math,os,socket$/;"	i
+run	dowload1.py	/^    def run(self):$/;"	m	class:DownloadWorker
+setup_dir	dowload1.py	/^def setup_dir():$/;"	f
+sleep	dowload1.py	/^from time  import ctime,time,sleep$/;"	i
+socket	dowload1.py	/^import urllib.request,sys,math,os,socket$/;"	i
+sys	dowload1.py	/^import urllib.request,sys,math,os,socket$/;"	i
+time	dowload1.py	/^from time  import ctime,time,sleep$/;"	i
+urllib	dowload1.py	/^import urllib.request,sys,math,os,socket$/;"	i
+user_agent	dowload1.py	/^user_agent = 'Mozilla\/5.0 (X11; Linux x86_64; rv:38.0) Gecko\/20100101 Firefox\/38.0'$/;"	v

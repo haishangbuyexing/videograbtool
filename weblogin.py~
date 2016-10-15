@@ -1,0 +1,50 @@
+# 使用Chromedriver
+driver = webdriver.Chrome()
+# 打开portal登录页
+driver.get("http://www.tongzhuo100.com/login/v/?url=http://www.tongzhuo100.com/")
+
+# 输入账号密码
+stu_id = driver.find_element_by_name("usr").send_keys("18500951888")
+# 这个页面有毒，无法定位password，因此按下回车键再输入
+#stu_id1 = driver.find_element_by_id("user_name")
+#stu_id1.send_keys((Keys.RETURN))
+stu_pwd = driver.find_element_by_name("pwd")
+stu_pwd.send_keys("tz4006345699")
+
+# 登录
+login_id = driver.find_element_by_id("submit_button").click()
+time.sleep(5)
+# 进入研究生院
+driver.find_element_by_id("button-1027-btnWrap").click()
+time.sleep(2)
+driver.find_element_by_id("menuitem-1051-iconEl").click()
+# 打开新的tab，载入成绩单页面。
+driver.find_element_by_tag_name('body').send_keys(Keys.COMMAND + 'n')
+driver.get(
+    "https://portal.pku.edu.cn/portal2013/bizcenter/sgims/redirectToSGIMSO.do?urlRoot=yjxjTeaching&modId=yjxjcjcxYJS")
+time.sleep(2)
+# 得到js加载完的网页代码
+html = driver.page_source
+print(html)
+# .execute_script("return document.getElementsByTagName('html')[0].innerHTML")
+
+# 用简单的正则得到成绩数据
+import re
+pattern_head = re.compile("</a>(.*?)<img")
+item_head = re.findall(pattern_head, html)
+
+pattern_body = re.compile("\"on\">(.*?)</div>")
+item_content = re.findall(pattern_body, html)
+
+# 将得到的结果输出excel
+
+n_col = int(len(item_head))  # 每门课多少数据
+n_row = int(len(item_content) / len(item_head))  # 多少门课
+grade_excel = pd.DataFrame(data=np.zeros([n_row, n_col]), columns=item_head)
+for i in range(n_row):
+    grade_excel.ix[i] = item_content[i * 21:(i + 1) * 21]
+
+
+    # 计算已经出分的门数
+num_existed_grades = sum(grade_excel['成绩'] != '\xa0')
+driver.close()

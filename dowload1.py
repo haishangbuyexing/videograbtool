@@ -10,6 +10,21 @@ from threading import Thread
 from time  import ctime,time,sleep
 from urllib.request import HTTPError,URLError
 import urllib.request,sys,math,os,socket
+import logger
+import json
+json_str = ''
+def app_init():
+    """
+    data init
+    """
+    if os.path.exists('data.json'):
+        return
+    data = {
+        'threadnum' : 10,
+	'videonum'  : 20,
+    }
+    with open('data.json', 'w') as f:
+        json.dump(data, f)
 
 user_agent = 'Mozilla/5.0 (X11; Linux x86_64; rv:38.0) Gecko/20100101 Firefox/38.0'
 def down(down_dir,link):
@@ -43,7 +58,7 @@ def setup_dir():
     download_dir = os.path.abspath("/home/dowload/")
     return download_dir
 
-def get_link(start,stop):
+def get_link(origion, start,stop):
     """
     Acquire all downloading links and set to links array
     Args:
@@ -52,9 +67,14 @@ def get_link(start,stop):
     Return:
         links:the all link array for downloading
     """
+    strlist = origion.split("_") 
+    if len(strlist) != 2:
+       logger.error("the url is not valid %s", origion) 
+       return
+    origion = strlist[0] + "_"
     links = []
     for x in range(start, stop):
-        url = 'http://v17.tongzhuo100.com/files/primary/five/14AANDAANN_'+str(x)+'.mp4'
+        url = origion + str(x) + '.mp4'
         links.append(url)
     return links
 
@@ -84,14 +104,18 @@ class DownloadWorker(Thread):
             self.queue.task_done()
 
 def main():
+    app_init()
+    with open('data.json', 'r') as f:
+        json_data = json.load(f)
+    print(json_data['videonum'])
     ts = time()
-    start = int(input("Please input the start value: "))
-    stop = int(input("Please input the stop value: "))
+    start = 1 
+    stop = int(json_data['videonum'])
     # set the number of threads
-    threads = int(input("Please input the download numbers every piece: "))
+    threads = int(json_data['threadnum'])
     k = stop-start
     # acquire the download links
-    links = [l for l in get_link(start,stop)]
+    links = [l for l in get_link(origion, start,stop)]
     # set the download storage directory
     down_dir = setup_dir()
     queue = Queue()
