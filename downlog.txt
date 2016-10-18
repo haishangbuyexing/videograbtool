@@ -1,0 +1,10 @@
+tongzhuo     Mon, 17 Oct 2016 20:37:52 ERROR    download http://v15.tongzhuo100.com/files/junior/eight/1DMC44DMDA_8.mp4 failed
+tongzhuo     Mon, 17 Oct 2016 20:47:53 ERROR    download http://v15.tongzhuo100.com/files/junior/seven/1DMG141DGM_6.mp4 failed
+tongzhuo     Mon, 17 Oct 2016 21:45:01 ERROR    download http://v15.tongzhuo100.com/files/junior/eight/1DMGCCMC0N_1.mp4 failed
+tongzhuo     Mon, 17 Oct 2016 22:04:54 ERROR    download http://v15.tongzhuo100.com/files/junior/eight/1DMGCKCC4C_19.mp4 failed
+tongzhuo     Mon, 17 Oct 2016 22:16:49 ERROR    download http://v15.tongzhuo100.com/files/junior/nine/1DMGKAKCN4_4.mp4 failed
+tongzhuo     Mon, 17 Oct 2016 22:46:39 ERROR    download http://v15.tongzhuo100.com/files/junior/nine/1DMGCGGGD0_3.mp4 failed
+tongzhuo     Mon, 17 Oct 2016 23:13:43 ERROR    download http://v15.tongzhuo100.com/files/junior/seven/1DMGCCC44G_9.mp4 failed
+tongzhuo     Mon, 17 Oct 2016 23:35:01 ERROR    download http://v15.tongzhuo100.com/files/junior/seven/1DMC44CDMG_6.mp4 failed
+tongzhuo     Tue, 18 Oct 2016 00:01:09 ERROR    download http://v17.tongzhuo100.com/files/junior/eight/144MM4GMAC_3.mp4 failed
+tongzhuo     Tue, 18 Oct 2016 09:37:19 ERROR    download http://v15.tongzhuo100.com/files/junior/eight/1DMC44DMDA_8.mp4 failed

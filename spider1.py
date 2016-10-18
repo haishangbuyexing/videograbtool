@@ -25,11 +25,11 @@ import time
 reload(sys)
 sys.setdefaultencoding("utf-8")
 def getVideoUrl():
-    getVideoMp4Url(u'鲁教版');
-def getVideoMp4Url(version):
+    getVideoMp4Url();
+def getVideoMp4Url():
     conn = sqlite3.connect('sqlite.db')
     cursor = conn.cursor()
-    sql = "select id,url,mp4url from video where version=\'%s\';" % version
+    sql = "select id,url,mp4url from video;"
     cursor.execute(sql)
     result = cursor.fetchall()
     server = Server("/bin/browsermob-proxy-2.0-beta-6/bin/browsermob-proxy")

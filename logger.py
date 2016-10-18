@@ -1,5 +1,5 @@
 import logging
-l = logging.getLogger("smb-master")
+l = logging.getLogger("")
 def debug(txt, *f):
     try:
         l.debug(txt, *f)
