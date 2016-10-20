@@ -1,9 +1,9 @@
 #-*- coding: utf-8 -*-
 import subprocess
-
+import commands
+import os
 def getstatusoutput(cmd):
     p = subprocess.Popen(cmd,shell=True, stdout = subprocess.PIPE,stderr= subprocess.PIPE)
-
     result = subprocess.Popen.wait(p) 
     lines = p.stdout.readlines()
     lines += p.stderr.readlines()
@@ -18,8 +18,7 @@ def getstatusoutput(cmd):
 
     return result,out
     
-
 if __name__=="__main__":
-    rc,out = getstatusoutput("ffprobe %s -show_format 2>&1 | sed -n 's/duration=//p' " % ("/root/Videos/tongzhuo/鲁教版/地理/七年级/上册/第二章第1节/《地势和地形（3）》/1DMGCG0M1G_3.mp4".decode('utf-8'),))
-    print rc
-    print out
+
+    cmd = '''ffmpeg -i %s -vcodec libx264 %s''' %("D:\\1DMG14110M_1.mp4 ", "D:\\temp.mp4")
+    subprocess.check_call(cmd,  shell='True')
