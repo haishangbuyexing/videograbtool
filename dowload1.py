@@ -141,4 +141,5 @@ def main():
     print( "The finished time:" + ctime() )
 
 if __name__ == '__main__':
-    main()
+    #main()
+    down("/root/Video/tongzhuo/", "http://v15.tongzhuo100.com/files/junior/eight/1DMGCG0K44_1.mp4")

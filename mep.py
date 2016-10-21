@@ -6,6 +6,7 @@ import json
 import subprocess
 import commands
 import logging
+from collections import OrderedDict
 LOGFILE="downlog.txt"
 logger = logging.getLogger("tongzhuo")
 formatter = logging.Formatter('%(name)-12s %(asctime)s %(levelname)-8s %(message)s', '%a, %d %b %Y %H:%M:%S',)  
@@ -73,7 +74,6 @@ def createMep(basedir):
 	movieSumDuration = 0
 	for i in range(len(movielist)):
 	    file = slist[0] + "_%s.mp4"%(i+1)
-	    continue
 	    fileduration =  round(float(getLength(file))*10000000)
 	    movieSumDuration += fileduration
 	    if i == 0:
@@ -186,7 +186,7 @@ def createMep(basedir):
         result = cursor.fetchone()
         if len(result):
             with open(os.path.join(basedir, "%s.mep"%result[0]), 'w') as f:
-                json.dump(configList, f, ensure_ascii=False, indent=2)
+                json.dump(configList, f, ensure_ascii=False, indent=2, sort_keys=True)
 
 
 

@@ -27,7 +27,7 @@ def down(down_dir,link, referer):
     """
     directory = os.path.join(down_dir, os.path.basename(link))
     headers={'User-Agent': user_agent, 
-             'Referer': referer
+             'Referer': link
 	    }#构造头部
     try:
         conn = requests.get(link, headers=headers, timeout=5)
@@ -53,7 +53,7 @@ def download():
                             "downdir nvarchar not null, " \
                            "finished interger not null);";
     cursor.execute(sql)
-    sql = "select id, version, subject, grade, semester, lesson, name, mp4url, subjecturl from video where mp4url != '';"
+    sql = "select id, version, subject, grade, semester, lesson, name, mp4url, subjecturl from video where subject=\'语文\' and mp4url != '';"
     cursor.execute(sql)
     results =  cursor.fetchall()
     MAXCOUNT=20
@@ -83,8 +83,8 @@ def download():
     		   continue
            if down(dirpath, downloadurl, results[index][7]):
                downpath = os.path.join(dirpath, os.path.basename(downloadurl))
-               sql = "insert into dowloadedmp4 (downurl, downpath, downdir, finished) "\
-                  "values (\'%s\',\'%s\',\'%s\', \'%s\');" % (downloadurl,  downpath, dirpath, 1)
+               sql = '''insert into dowloadedmp4 (downurl, downpath, downdir, finished) \
+                  values (\'%s\',"%s","%s", \'%s\');''' % (downloadurl,  downpath, dirpath, 1)
 	       print sql
                cursor.execute(sql)
       	       conn.commit()
